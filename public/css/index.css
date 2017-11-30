@@ -44,9 +44,9 @@ h4 {
   	  position: sticky;
   	  top: 0;
   	  background: red;
-      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+      animation: colorchange 20s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+      -webkit-animation: colorchange 20s infinite; /* Chrome and Safari */
     }
 
     @keyframes colorchange

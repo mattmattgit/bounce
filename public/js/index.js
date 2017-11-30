@@ -5,7 +5,7 @@ $('.buttons').delay(3000).fadeIn();
 
 let scroller = function () {
 	// window.scrollTo(0,document.body.scrollHeight)
-	 $('html, body').animate({scrollTop:1200},2000);
+	 $('html, body').animate({scrollTop:1200},1000);
 }
 
 //about

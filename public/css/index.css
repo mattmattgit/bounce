@@ -1,0 +1,314 @@
+#about_section, #about_one, #about_two, #more_about {
+	display: none;
+}
+
+#how_section, #how_one, #how_two, #more_how {
+	display: none;
+}
+
+#demo_section {
+	display: none;
+}
+
+#contact_section {
+	display: none;
+}
+
+a {
+	font-size: 0.75em;
+}
+
+.top {
+	padding-top: 100px;
+	display: none;
+}
+
+
+body, p, h1, h4{
+
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	color: #6f7277;
+}
+
+h4 {
+	color: #6f7277;
+}
+
+.top-strip {
+	  height: 5px;
+	  position: -webkit-sticky;
+  	  position: sticky;
+  	  top: 0;
+  	  background: red;
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      75%  {background: orange;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange 
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      75%  {background: orange`;}
+      100% {background: red;}
+    }
+
+.title {
+	padding-top: 10px;
+}
+
+.emoji {
+	font-size: 1.5em;
+}
+
+#text {
+	padding-top: 30px;
+
+}
+
+.first {
+	color: white;
+
+	border-radius: 5px;
+	background-color: #2196F3;
+	width: 80px;
+	display: none;
+}
+
+.second {
+	color: white;
+
+	border-radius: 5px;
+	background-color: #2196F3;
+	width: 80%;
+	display: none;
+}
+
+.buttons {
+	display: none;
+	padding-bottom: 50px;
+}
+
+.clicker {
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2196F3;
+	color: #2196F3;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 25px;
+	width: 20%;
+	cursor: pointer;
+}
+
+.clicked {
+	float: right;
+	color: black;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 5px;
+	background-color: #e0e2e5;
+	width: 30%;
+}
+
+.view_more:hover {
+	cursor: pointer;
+}
+
+.view_more {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2196F3;
+	color: #2196F3;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 5px;
+	width: 50%;
+}
+
+.gap {
+	padding: 3px;
+}
+
+#overlay_about {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  text-align: center;
+  bottom: 0;
+  padding: 40px;
+}
+
+#overlay_how {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  text-align: center;
+  bottom: 0;
+  padding: 40px;
+}
+
+.overlay_white {
+	background-color: white;
+	padding: 5px;
+	color: black;
+	border-radius: 5px;
+	height: 100%;
+}
+/* laptop */
+@media (min-width: 1024px) {
+
+.title {
+	padding-top: 10px;
+}
+
+.emoji {
+	font-size: 1.25em;
+}
+
+#text {
+	padding-top: 30px;
+	padding-left: 200px;
+	padding-right: 200px;
+
+}
+
+.first {
+	color: white;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 10px;
+	background-color: #2196F3;
+	width: 10%;
+	display: none;
+}
+
+.second {
+	color: white;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	background-color: #2196F3;
+	width: 50%;
+	display: none;
+}
+
+.buttons {
+	display: none;
+	padding-bottom: 100px;
+}
+
+.clicker {
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	color: grey;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 10px;
+	width: 100px;
+	cursor: pointer;
+}
+
+.clicked {
+	float: right;
+	color: black;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 10px;
+	background-color: #e0e2e5;
+	width: 20%;
+}
+
+.view_more:hover {
+	cursor: pointer;
+}
+
+.view_more {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2196F3;
+	color: #2196F3;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 10px;
+	width: 35%;
+}
+
+.gap {
+	padding: 3px;
+}
+
+#overlay_about {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  text-align: center;
+  bottom: 0;
+  padding: 40px;
+}
+
+#overlay_how {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  text-align: center;
+  bottom: 0;
+  padding: 40px;
+}
+
+#overlay_demo {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+  text-align: center;
+  bottom: 0;
+  padding: 40px;
+
+}
+
+.overlay_white {
+	background-color: white;
+	padding: 30px;
+	color: black;
+	border-radius: 5px;
+	height: 100%;
+}
+
+
+}

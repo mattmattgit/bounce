@@ -3,10 +3,8 @@ $('#welcome_one').delay(1000).fadeIn();
 $('#welcome_two').delay(2000).fadeIn();
 $('.buttons').delay(3000).fadeIn();
 
-
-
 let scroller = function () {
-	 $('html, body').animate({scrollTop:5000},1000);
+	 $('html, body').animate({scrollTop:5000},4000);
 }
 
 //location
@@ -16,9 +14,7 @@ $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
   	`<div class="row"><center><img src="/img/north-pole.jpg" width="250px"/></center></div>`)
 });
 
-
 //news stories
-
 const keyNews = 'ddeff3a422bf4bb0bf7b4d3e630e448c'
 
 let urlNews = 'https://newsapi.org/v2/top-headlines?' +
@@ -54,15 +50,16 @@ switch (num) {
         break;
 }
 
-var c = 1500
+var c = 2000
 
 //about
 $('#about').click( function () {
 	$('.buttons').hide()
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
-	for(let i = 1; i < 4; i++) {
-		$(`#about_${i}`).delay(i * c - 500).fadeIn(scroller);
+	$(`#about_1`).delay(c - 1000).fadeIn(scroller);
+	for(let i = 2; i < 4; i++) {
+		$(`#about_${i}`).delay(i * c).fadeIn(scroller);
 	}
 	$('#more_about').delay(4 * c).fadeIn(scroller);
 	$('.buttons').delay(5 * c).fadeIn(scroller);
@@ -80,7 +77,8 @@ $('#how').click( function (callback) {
 	$('.buttons').hide()
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
-	for(let i = 1; i < 11; i++) {
+	$(`#how_1`).delay(c -1000).fadeIn(scroller);
+	for(let i = 2; i < 11; i++) {
 		$(`#how_${i}`).delay(i * c - 500).fadeIn(scroller);
 	}
 	$('#more_how').delay(12 * c).fadeIn(scroller);
@@ -92,7 +90,6 @@ $('#how').click( function (callback) {
 		$('#overlay_how').click( function() {
 			$('#overlay_how').fadeOut("slow");
 		});
-
 });
 
 //demo

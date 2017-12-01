@@ -35,16 +35,18 @@ switch (num) {
         break;
 }
 
+var c = 1500
+
 //about
 $('#about').click( function () {
 	$('.buttons').hide()
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
 	for(let i = 1; i < 4; i++) {
-		$(`#about_${i}`).delay(i*1000 - 500).fadeIn(scroller);
+		$(`#about_${i}`).delay(i * c - 500).fadeIn(scroller);
 	}
-	$('#more_about').delay(4000).fadeIn(scroller);
-	$('.buttons').delay(5000).fadeIn(scroller);
+	$('#more_about').delay(4 * c).fadeIn(scroller);
+	$('.buttons').delay(5 * c).fadeIn(scroller);
 	$('#about').remove();
 	$("#more_about").click( () => {
 		$('#overlay_about').fadeIn("slow");	
@@ -59,7 +61,6 @@ $('#how').click( function (callback) {
 	$('.buttons').hide()
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
-	var c = 1500
 	for(let i = 1; i < 11; i++) {
 		$(`#how_${i}`).delay(i * c - 500).fadeIn(scroller);
 	}

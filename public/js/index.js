@@ -13,10 +13,9 @@ $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
   $('#how_9').html(`<div>From ${data.city}, ${data.region_name} to the North Pole is ${data.latitude * 69} miles.</div>` + '<br' +
   	`<div class="row"><center><img src="/img/north-pole.jpg" width="250px"/></center></div>`);
 });
-
-  $.get('https://maps.googleapis.com/maps/api/directions/json?origin=New+York,+NY&destination=Boston,+MA&waypoints=optimize:true|Providence,+RI|Hartford,+CT&key=AIzaSyDzkFQhsDJkljCVAbYUJ4E7wFCHRt_N9dU', function(res) {
-  	console.log(res);
-  })
+$.getJSON('http://www.distance24.org/route.json?stops=Hamburg|Berlin', function(res) {
+	console.log(res)
+})
 //news stories
 const keyNews = 'ddeff3a422bf4bb0bf7b4d3e630e448c'
 
@@ -113,8 +112,8 @@ $('#contact').click( function () {
 	$('.buttons').hide()
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').show();
-	$('#contact_1').delay(c -1000).fadeIn();
-	$('#contact_2').delay(2 * c).fadeIn();
+	$('#contact_1').delay(c -1000).fadeIn(scroller);
+	$('#contact_2').delay(2 * c).fadeIn(scroller);
 	$('#contact').remove();
 	$('.buttons').delay(3 * c).fadeIn(scroller);
 });

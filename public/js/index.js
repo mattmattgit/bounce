@@ -1,22 +1,22 @@
-$('.top').fadeIn(500);
-$('#welcome_one').delay(500).fadeIn();
-$('#welcome_two').delay(1500).fadeIn();
-$('.buttons').delay(3000).fadeIn();
+$('.top').fadeIn();
+$('#welcome_one').delay().fadeIn();
+$('#welcome_two').delay().fadeIn();
+$('.buttons').delay().fadeIn();
 
 let scroller = function () {
-	// window.scrollTo(0,document.body.scrollHeight)
 	 $('html, body').animate({scrollTop:1200},1000);
 }
 
 //about
 $('#about').click( function () {
 	$('.buttons').hide()
-	$('.buttons').delay(5000).fadeIn()
+	$('.buttons').delay(5000).fadeIn();
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
-	$('#about_one').delay(500).fadeIn(scroller);
-	$('#about_two').delay(1500).fadeIn(scroller);
-	$('#more_about').delay(3000).fadeIn(scroller);
+	for(let i = 1; i < 4; i++) {
+		$(`#about_${i}`).delay(i*1000 - 500).fadeIn(scroller);
+	}
+	$('#more_about').delay(4000).fadeIn(scroller);
 	$('#about').remove();
 	$("#more_about").click( () => {
 		$('#overlay_about').fadeIn("slow");	
@@ -24,18 +24,18 @@ $('#about').click( function () {
 		$('#overlay_about').click( function() {
 			$('#overlay_about').fadeOut("slow");
 		});
-window.scrollTo(0,document.body.scrollHeight).delay
 });
 
 //how 
 $('#how').click( function (callback) {
 	$('.buttons').hide()
-	$('.buttons').delay(5000).fadeIn()
+	$('.buttons').delay(12000).fadeIn()
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
-	$('#how_one').delay(500).fadeIn(scroller);
-	$('#how_two').delay(2000).fadeIn(scroller);
-	$('#more_how').delay(4000).fadeIn(scroller);
+	for(let i = 1; i < 11; i++) {
+		$(`#how_${i}`).delay(i*1000 - 500).fadeIn(scroller);
+	}
+	$('#more_how').delay(11000).fadeIn(scroller);
 	$('#how').remove();
 	$("#more_how").click( () => {
 		$('#overlay_how').fadeIn("slow");		
@@ -57,7 +57,6 @@ $('#demo').click( function () {
 		$('#overlay_demo').click( function() {
 			$('#overlay_demo').fadeOut("slow");
 		});
-window.scrollTo(0,document.body.scrollHeight);
 });
 
 //contact
@@ -65,7 +64,6 @@ $('#contact').click( function () {
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').fadeIn("slow");
 	$('#contact').remove();
-window.scrollTo(0,document.body.scrollHeight);
 });
 
 

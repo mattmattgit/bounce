@@ -1,8 +1,8 @@
-#about_section, #about_one, #about_two, #more_about {
+#about_section, #about_1, #about_2, #about_3, #more_about {
 	display: none;
 }
 
-#how_section, #how_one, #how_two, #more_how {
+#how_section, #how_1, #how_2, #how_3, #how_4, #how_5, #how_6, #how_7, #how_8, #how_9, #how_10, #more_how {
 	display: none;
 }
 
@@ -44,8 +44,8 @@ h4 {
   	  position: sticky;
   	  top: 0;
   	  background: red;
-      animation: colorchange 20s infinite; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
+      animation: colorchange 20s infinite; /* animation-name followed by duration in larges*/
+         /* you could also use millilarges (ms) or something like 2.5s */
       -webkit-animation: colorchange 20s infinite; /* Chrome and Safari */
     }
 
@@ -80,7 +80,7 @@ h4 {
 
 }
 
-.first {
+.small {
 	color: white;
 	align-items: center;
 	padding-left: 20px;
@@ -93,7 +93,18 @@ h4 {
 	display: none;
 }
 
-.second {
+.medium {
+	color: white;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 10px;
+	background-color: #2196F3;
+	width: 20%;
+	display: none;
+}
+
+.large {
 	color: white;
 	align-items: center;
 	padding-left: 20px;
@@ -103,6 +114,22 @@ h4 {
 	border-radius: 10px;
 	background-color: #2196F3;
 	width: 80%;
+	display: none;
+}
+
+.clipping {
+	color: black;
+	align-items: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #eaecef;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	background-color: white;
+	width: 50%;
 	display: none;
 }
 
@@ -163,7 +190,7 @@ h4 {
   display: none;
   text-align: center;
   bottom: 0;
-  padding: 40px;
+  padding: 5px;
 }
 
 #overlay_how {
@@ -175,14 +202,14 @@ h4 {
   display: none;
   text-align: center;
   bottom: 0;
-  padding: 40px;
+  padding: 5px;
 }
 
 .overlay_white {
 	background-color: white;
 	padding: 5px;
 	color: black;
-	border-radius: 5px;
+	border-radius: 0px;
 	height: 100%;
 }
 /* laptop */
@@ -203,18 +230,29 @@ h4 {
 
 }
 
-.first {
+.small {
 	color: white;
 	padding-left: 20px;
 	padding-top: 8px;
 	padding-bottom: 1px;
 	border-radius: 10px;
 	background-color: #2196F3;
-	width: 15%;
+	width: 12%;
 	display: none;
 }
 
-.second {
+.medium {
+	color: white;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 1px;
+	border-radius: 10px;
+	background-color: #2196F3;
+	width: 20%;
+	display: none;
+}
+
+.large {
 	color: white;
 	align-items: center;
 	padding-left: 20px;
@@ -223,6 +261,22 @@ h4 {
 	padding-bottom: 5px;
 	border-radius: 10px;
 	background-color: #2196F3;
+	max-width: 50%;
+	display: none;
+}
+
+.clipping {
+	color: black;
+	align-items: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #eaecef;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	background-color: white;
 	width: 50%;
 	display: none;
 }
@@ -283,7 +337,7 @@ h4 {
   display: none;
   text-align: center;
   bottom: 0;
-  padding: 40px;
+  padding: 5px;
 }
 
 #overlay_how {
@@ -295,7 +349,7 @@ h4 {
   display: none;
   text-align: center;
   bottom: 0;
-  padding: 40px;
+  padding: 5px;
 }
 
 #overlay_demo {
@@ -307,7 +361,7 @@ h4 {
   display: none;
   text-align: center;
   bottom: 0;
-  padding: 40px;
+  padding: 5px;
 
 }
 
@@ -315,7 +369,7 @@ h4 {
 	background-color: white;
 	padding: 30px;
 	color: black;
-	border-radius: 5px;
+	border-radius: 0px;
 	height: 100%;
 }
 

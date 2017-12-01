@@ -4,7 +4,8 @@ $('#welcome_two').delay(2000).fadeIn();
 $('.buttons').delay(3000).fadeIn();
 
 let scroller = function () {
-	 $('html, body').animate({scrollTop:5000},4000);
+	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
+
 }
 
 //location
@@ -82,7 +83,7 @@ $('#how').click( function (callback) {
 		$(`#how_${i}`).delay(i * c - 500).fadeIn(scroller);
 	}
 	$('#more_how').delay(12 * c).fadeIn(scroller);
-	$('.buttons').delay(13 * c).fadeIn(scroller)
+	$('.buttons').delay(13 * c).fadeIn(scroller);
 	$('#how').remove();
 	$("#more_how").click( () => {
 		$('#overlay_how').fadeIn("slow");		
@@ -93,23 +94,27 @@ $('#how').click( function (callback) {
 });
 
 //demo
-$('#demo').click( function () {
-	$('#demo_section').insertBefore('.buttons');
-	$('#demo_section').fadeIn("slow");
-	$('#demo').remove();
-	$("#more_demo").click( () => {
-		$('#overlay_demo').fadeIn("slow");		
-		});
-		$('#overlay_demo').click( function() {
-			$('#overlay_demo').fadeOut("slow");
-		});
-});
+// $('#demo').click( function () {
+// 	$('#demo_section').insertBefore('.buttons');
+// 	$('#demo_section').fadeIn("slow");
+// 	$('#demo').remove();
+// 	$("#more_demo").click( () => {
+// 		$('#overlay_demo').fadeIn("slow");		
+// 		});
+// 		$('#overlay_demo').click( function() {
+// 			$('#overlay_demo').fadeOut("slow");
+// 		});
+// });
 
 //contact
 $('#contact').click( function () {
+	$('.buttons').hide()
 	$('#contact_section').insertBefore('.buttons');
-	$('#contact_section').fadeIn("slow");
+	$('#contact_section').show();
+	$('#contact_1').delay(c).fadeIn();
+	$('#contact_2').delay(2 * c).fadeIn();
 	$('#contact').remove();
+	$('.buttons').delay(3 * c).fadeIn(scroller);
 });
 
 

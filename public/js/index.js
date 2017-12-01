@@ -1,7 +1,7 @@
 $('.top').fadeIn();
-$('#welcome_one').delay().fadeIn();
-$('#welcome_two').delay().fadeIn();
-$('.buttons').delay().fadeIn();
+$('#welcome_one').delay(1000).fadeIn();
+$('#welcome_two').delay(2000).fadeIn();
+$('.buttons').delay(3000).fadeIn();
 
 let scroller = function () {
 	 $('html, body').animate({scrollTop:5000},1000);

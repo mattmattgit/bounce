@@ -63,19 +63,20 @@ $('#about').click( function () {
 	$('.buttons').hide()
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
-	$(`#about_1`).delay(c - 1000).fadeIn(scroller);
-	for(let i = 2; i < 4; i++) {
-		$(`#about_${i - 1}`).delay(i * c - 500).fadeIn(scroller);
-	}
-	for(let i = 1; i < 3; i++) {
-			$(`#about_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
-			$(this).remove();
+	$(`#about_loader_1`).delay().fadeIn().delay(750).fadeOut(function () {
+			$(this).remove(scroller);
 		});
-		// console.log(`talk in ${i + 1}`, i * c - 500)
-		console.log(`talk out ${i + 1}`, ((i * c - 500) + ((i -1) * c - 500)))
+	$(`#about_1`).delay(c - 1000).fadeIn(scroller);
+	for(let i = 2; i < 5; i++) {
+		$(`#about_${i}`).delay(i * c - 500).fadeIn(scroller);
+	}
+	for(let i = 1; i < 4; i++) {
+			$(`#about_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
+			$(this).remove(scroller);
+		});
 	};
-	$('#more_about').delay(4 * c).fadeIn(scroller);
-	$('.buttons').delay(5 * c).fadeIn(scroller);
+	$('#more_about').delay(3 * c).fadeIn(scroller);
+	$('.buttons').delay(3.5 * c).fadeIn(scroller);
 	$('#about').remove();
 	$("#more_about").click( () => {
 		$('#overlay_about').fadeIn("slow");	
@@ -91,23 +92,20 @@ $('#how').click( function (callback) {
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
 	$(`#how_loader_1`).fadeIn().delay(c - 1800).fadeOut(function () {
-			$(this).remove();
+			$(this).remove(scroller);
 		});	
 	$(`#how_1`).delay(c -1000).fadeIn(scroller);
-
 	for(let i = 2; i < 11; i++) {
 		$(`#how_${i}`).delay(i * c - 500).fadeIn(scroller);
 		console.log(`bubble in ${i}`, i * c - 500)
 	}
 	for(let i = 1; i < 10; i++) {
 			$(`#how_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
-			$(this).remove();
+			$(this).remove(scroller);
 		});
-		// console.log(`talk in ${i + 1}`, i * c - 500)
-		console.log(`talk out ${i + 1}`, ((i * c - 500) + ((i -1) * c - 500)))
 	};
 	$('#more_how').delay(10 * c).fadeIn(scroller);
-	$('.buttons').delay(11 * c - 500).fadeIn(scroller);
+	$('.buttons').delay(10.5 * c).fadeIn(scroller);
 	$('#how').remove();
 	$("#more_how").click( () => {
 		$('#overlay_how').fadeIn("slow");		

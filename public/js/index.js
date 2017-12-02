@@ -136,10 +136,10 @@ $('#contact').click( function () {
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').show();
 	$('#contact_1').delay(c - 1000).fadeIn(scroller);
-	$('#loader').delay(c - 500).fadeIn().delay(c - 1250).fadeOut(function () {$(this).remove});
+	$('#loader').delay(c - 500).fadeIn().delay(c - 1250).fadeOut(function () {$(this).remove(scroller)});
 	$('#contact_2').delay(2 * c - 2000).fadeIn(scroller);
 	$('#contact').remove();
-	$('.buttons').delay(3 * c).fadeIn(scroller);
+	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
 });
 
 

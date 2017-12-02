@@ -18,6 +18,9 @@
 	display: none;
 }
 
+#contact_loader_1, #contact_loader_2 {
+	display: none;
+}
 
 #demo_section {
 	display: none;

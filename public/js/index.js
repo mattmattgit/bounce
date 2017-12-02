@@ -1,7 +1,13 @@
 $('.top').fadeIn();
-$('#welcome_one').delay(1000).fadeIn();
-$('#welcome_two').delay(2000).fadeIn();
-$('.buttons').delay(3000).fadeIn();
+$(`#text_loader_1`).delay(c).fadeIn().delay(500).fadeOut(function () {
+		$(this).remove();
+	});
+$('#welcome_one').delay(1500).fadeIn();
+$(`#text_loader_2`).delay(2000).fadeIn().delay(750).fadeOut(function () {
+		$(this).remove();
+	});
+$('#welcome_two').delay(3500).fadeIn();
+$('.buttons').delay(4000).fadeIn();
 
 let scroller = function () {
 	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
@@ -10,12 +16,10 @@ let scroller = function () {
 //location
 $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
   console.log(data);
-  $('#how_9').html(`<div>From ${data.city}, ${data.region_name} to the North Pole is ${data.latitude * 69} miles.</div>` + '<br' +
+  $('#how_9').html(`<div>From ${data.city}, ${data.region_name} to the North Pole is ${Math.round(data.latitude * 69)} miles.</div>` + '<br' +
   	`<div class="row"><center><img src="/img/north-pole.jpg" width="250px"/></center></div>`);
 });
-$.getJSON('http://www.distance24.org/route.json?stops=Hamburg|Berlin', function(res) {
-	console.log(res)
-})
+
 //news stories
 const keyNews = 'ddeff3a422bf4bb0bf7b4d3e630e448c'
 
@@ -52,7 +56,7 @@ switch (num) {
         break;
 };
 
-var c = 2000
+var c = 2500
 
 //about
 $('#about').click( function () {
@@ -61,8 +65,15 @@ $('#about').click( function () {
 	$('#about_section').show();
 	$(`#about_1`).delay(c - 1000).fadeIn(scroller);
 	for(let i = 2; i < 4; i++) {
-		$(`#about_${i}`).delay(i * c).fadeIn(scroller);
+		$(`#about_${i - 1}`).delay(i * c - 500).fadeIn(scroller);
 	}
+	for(let i = 1; i < 3; i++) {
+			$(`#about_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
+			$(this).remove();
+		});
+		// console.log(`talk in ${i + 1}`, i * c - 500)
+		console.log(`talk out ${i + 1}`, ((i * c - 500) + ((i -1) * c - 500)))
+	};
 	$('#more_about').delay(4 * c).fadeIn(scroller);
 	$('.buttons').delay(5 * c).fadeIn(scroller);
 	$('#about').remove();
@@ -79,12 +90,24 @@ $('#how').click( function (callback) {
 	$('.buttons').hide()
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
+	$(`#how_loader_1`).fadeIn().delay(c - 1800).fadeOut(function () {
+			$(this).remove();
+		});	
 	$(`#how_1`).delay(c -1000).fadeIn(scroller);
+
 	for(let i = 2; i < 11; i++) {
 		$(`#how_${i}`).delay(i * c - 500).fadeIn(scroller);
+		console.log(`bubble in ${i}`, i * c - 500)
 	}
-	$('#more_how').delay(12 * c).fadeIn(scroller);
-	$('.buttons').delay(13 * c).fadeIn(scroller);
+	for(let i = 1; i < 10; i++) {
+			$(`#how_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
+			$(this).remove();
+		});
+		// console.log(`talk in ${i + 1}`, i * c - 500)
+		console.log(`talk out ${i + 1}`, ((i * c - 500) + ((i -1) * c - 500)))
+	};
+	$('#more_how').delay(10 * c).fadeIn(scroller);
+	$('.buttons').delay(11 * c - 500).fadeIn(scroller);
 	$('#how').remove();
 	$("#more_how").click( () => {
 		$('#overlay_how').fadeIn("slow");		
@@ -112,8 +135,9 @@ $('#contact').click( function () {
 	$('.buttons').hide()
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').show();
-	$('#contact_1').delay(c -1000).fadeIn(scroller);
-	$('#contact_2').delay(2 * c).fadeIn(scroller);
+	$('#contact_1').delay(c - 1000).fadeIn(scroller);
+	$('#loader').delay(c - 500).fadeIn().delay(c - 1250).fadeOut(function () {$(this).remove});
+	$('#contact_2').delay(2 * c - 2000).fadeIn(scroller);
 	$('#contact').remove();
 	$('.buttons').delay(3 * c).fadeIn(scroller);
 });

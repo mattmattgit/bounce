@@ -6,6 +6,19 @@
 	display: none;
 }
 
+#how_loader_1, #how_loader_2, #how_loader_3, #how_loader_4, #how_loader_5, #how_loader_6, #how_loader_7, #how_loader_8, #how_loader_9, #how_loader_10, #how_loader_11 {
+	display:none;
+}  
+
+#text_loader_1, #text_loader_2 {
+	display: none;
+}
+
+#about_loader_1, #about_loader_2, #About_loader_3 {
+	display: none;
+}
+
+
 #demo_section {
 	display: none;
 }
@@ -13,6 +26,7 @@
 #contact_section {
 	display: none;
 }
+
 
 a {
 	font-size: 0.75em;
@@ -219,6 +233,7 @@ p {
 	border-radius: 0px;
 	height: 100%;
 }
+
 /* laptop */
 @media (min-width: 1024px) {
 

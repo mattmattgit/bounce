@@ -1,3 +1,4 @@
+
 //opening
 // var d = 250
 var d = 0 
@@ -82,10 +83,15 @@ $('#about').click( function () {
 	$('#about').remove();
 	$("#more_about").click( () => {
 		$('#overlay_about').fadeIn("slow");	
+		$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
 		});
-		$('#overlay_about').click( function() {
-			$('#overlay_about').fadeOut("slow");
-		});
+		// $('#overlay_about').click( function() {
+		// 	$('#overlay_about').fadeOut("slow");
+		// });
 });
 
 //how 

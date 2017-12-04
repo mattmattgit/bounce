@@ -1,13 +1,16 @@
+//opening
+// var d = 250
+var d = 0 
 $('.top').fadeIn();
-$(`#text_loader_1`).delay(c).fadeIn().delay(500).fadeOut(function () {
+$(`#text_loader_1`).delay(c).fadeIn().delay(2 * d).fadeOut(function () {
 		$(this).remove();
 	});
-$('#welcome_one').delay(1500).fadeIn();
-$(`#text_loader_2`).delay(2000).fadeIn().delay(750).fadeOut(function () {
+$('#welcome_one').delay(6 * d).fadeIn();
+$(`#text_loader_2`).delay(8 * d).fadeIn().delay(3 * d).fadeOut(function () {
 		$(this).remove();
 	});
-$('#welcome_two').delay(3500).fadeIn();
-$('.buttons').delay(4000).fadeIn();
+$('#welcome_two').delay(14 * d).fadeIn();
+$('.buttons').delay(16 * d).fadeIn();
 
 let scroller = function () {
 	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
@@ -15,7 +18,6 @@ let scroller = function () {
 
 //location
 $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
-  console.log(data);
   $('#how_9').html(`<div>From ${data.city}, ${data.region_name} to the North Pole is ${Math.round(data.latitude * 69)} miles.</div>` + '<br' +
   	`<div class="row"><center><img src="/img/north-pole.jpg" width="250px"/></center></div>`);
 });
@@ -56,8 +58,8 @@ switch (num) {
         break;
 };
 
-var c = 2500
-
+// var c = 2500
+var c = 0
 //about
 $('#about').click( function () {
 	$('.buttons').hide()
@@ -91,10 +93,10 @@ $('#how').click( function (callback) {
 	$('.buttons').hide()
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
-	$(`#how_loader_1`).fadeIn().delay(c - 1800).fadeOut(function () {
+	$(`#how_loader_1`).fadeIn().delay(750).fadeOut(function () {
 			$(this).remove(scroller);
 		});	
-	$(`#how_1`).delay(c -1000).fadeIn(scroller);
+	$(`#how_1`).delay(c - 1000).fadeIn(scroller);
 	for(let i = 2; i < 11; i++) {
 		$(`#how_${i}`).delay(i * c - 500).fadeIn(scroller);
 		console.log(`bubble in ${i}`, i * c - 500)
@@ -140,5 +142,3 @@ $('#contact').click( function () {
 	$('#contact').remove();
 	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
 });
-
-

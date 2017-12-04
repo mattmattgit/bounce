@@ -4,6 +4,7 @@
 	<title>Bounce</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -34,7 +35,7 @@
 			<div id="welcome_one" class="small"><p>Hi <span class="emoji"> 👋</span></p></div>
 			<div class="gap"></div>
 			<div id="text_loader_2"><img src="img/loader.gif" width="50px"/></div>
-			<div id="welcome_two" class="large"><p>Welcome to Bounce. We make and test chatbots <span class="emoji"> 🤖</span></p></div><br>
+			<div id="welcome_two" class="large"><p>Welcome to Bounce. We make and test Chatbots <span class="emoji"> 🤖</span></p></div><br>
 
 			<center class ="buttons">
 				<div id="about" class="clicker"><p>About</p></div>
@@ -152,16 +153,130 @@
 
 <div id="overlay_about">
 	<div class="overlay_white">
-		<div class="row">
+		<div class="row title_row">
+			<div class="col-md-4"><img src="/img/bounce.png" width="150px"/></div>
 			<div class="col-md-4"></div>
-			<div class="col-md-4"><center><img src="/img/bounce.png" width="150px"/></center></div>
 			<div class="col-md-4"></div>
 		</div>
-	<br>
-	<div class="row">
-		<center>
+		<br>
+		<div class="overlay_content">
+		<div class="row">
+			<img src="/img/robot.png" width="100%"/>
+		</div>
+		<br>
+		<div class="info_text">
+			<h2 class="header">What is a chat interface?</h2>
+			<p>
+				Simply put a chat interface is: Any user interface that imitates chatting with a real human.The idea here is to communicate with technology in more natural, more human way. Making it easier to interact with your device.
+			</p>
+			<h1>''<h1>
+			<p>
+				We think that you should just be able to message a business in the same way you message a friend. You should get a quick response.  And you shouldn’t have to install a new app. - Mark Zuckerburg
+			</p>
+			<h1>''<h1>
+		</div>
+		
+		<div class="big-gap"></div>
 
-		</center>
+		<div>
+			<img src='/img/yummy.png' width="100%"/>
+		</div>
+		
+		<div class="big-gap"></div>
+
+		<p>Right now there are two types of chat interfaces:</p>
+		<div class="example_block">
+		<h2>Voice assistants</h2>
+		<p>This involves the user interacting with their device using voice only. Current examples:</p>
+		<br>
+
+		<div class="row">
+			<center><div class="col-md-4"><img src="/img/siri.png" width="100px"/></div></center>
+			<center><div class="col-md-4"><img src="/img/google_assistant.png" width="100px"/></div></center>
+			<center><div class="col-md-4"><img src="/img/alexa.png" width="125px"/></div></center>
+		</div>
+
+		<h4>Great for:</h4>
+		<p>Providing quick useful answers, playing music or performing hands free tasks (such as reading recipes).</p>
+		</div>
+
+		<br><br>
+
+		<div class="example_block">
+		<h2>Chatbots</h2>
+		<p>This involves the user typing their input as you would text a friend. Current examples:</p>
+		<br>
+		<br>
+		<div class="row">
+			<center><div class="col-md-4"><img src="/img/messenger.png" width="100px"/></div></center>
+			<center><div class="col-md-4"><img src="/img/google_assistant.png" width="100px"/></div></center>
+			<center><div class="col-md-4"><img src="/img/twitter.png" width="125px"/></div></center>
+		</div>
+
+		<h4>Great for:</h4>
+		<p>More complicated tasks and can include more interesting content (such as embedded media and links). They can also be connected to popular chat services such as your company Facebook.</p>
+		</div>
+
+		<div class="big-gap"></div>
+
+		<h2 class="header">Why is this important to you now?</h2>
+		<p>Until very recently the technology simply hasn’t been up to the task. However, all the ingredients are now available to make chat interfaces a reality.</p>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/img/google_machine_learning.png" width="100%"/>
+			</div>
+			<div class="col-md-6">
+				<h4>They understand what you say</h4>
+				<p>Google speech recognition is now on a par with human accuracy.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/img/annual_funding.png" width="100%"/>
+			</div>
+			<div class="col-md-6">
+			<h4>They understand what you mean</h4>
+				<p>
+				There has been signifcant investment in machine learning over the past few years. This means chat interfaces can now under-stand context and pick out information from what you say. Questions no longer need to be phased in a particular way and the chat interface improves with continued use.With the right design chatbots can be in-formative, easy to use and even whitty.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="/img/chat_trends.png" width="100%"/>
+			</div>
+			<div class="col-md-6">
+				<h4>People are chatting more than ever</h4>
+				<p>It is all very well having the technology, but having applications on which it can be used is crucial. There are over 3 billion monthly users of the 3 largest chat apps.</p>
+			</div>
+		</div>
+
+		<div class="big-gap"></div>
+
+		<h1 class="header">Why is a chat interface better than your app?</h1>
+		<p>
+			Chat interfaces allow instant access to billions of users. Additionally android are now bundling google assistant with all software - over 2 billion phones use Android as their operating system.
+		</p>
+
+		<h4>It’s where your customers are</h4>
+
+		<img src="/img/user_graph.png" width="100%"/>
+
+		<h4>Faster Chat interfaces are instant.</h4>
+		<p>
+			On average users wait 3½ minutes for customer service agents. In the modern world your customers simply are not prepared to wait.
+		</p>
+		<h4>Easier</h4>
+		<p>
+			If you can talk to a person you can talk to a chat interface.Unlike with an app, users don’t have to learn a different interface for each platform, they use natural language.
+		</p>
+		<h4>No need to download</h4>
+		<p>
+		Chat interfaces can be integrated directly into the most popular messaging apps and don’t have to be separately downloaded. If your users have Facebook, Twitter or a number of other messaging and social media apps they can interact with your chatbot.</p>
+
+	</div>
 	</div>
 	</div>
 </div>
@@ -177,5 +292,6 @@
 
 
 <script src="/js/index.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

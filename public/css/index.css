@@ -205,6 +205,21 @@ p {
 	padding: 3px;
 }
 
+
+.big-gap {
+	height: 100px;
+}
+
+.header {
+	color: #4288f7;
+}
+
+.example_block {
+	background-color: #f0f0f0;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
 #overlay_about {
   background: rgba(0,0,0,0.9);
   width: 100%;
@@ -235,6 +250,7 @@ p {
 	color: black;
 	border-radius: 0px;
 	height: 100%;
+	overflow: scroll;
 }
 
 /* laptop */
@@ -408,11 +424,17 @@ h4 {
 }
 
 .overlay_white {
+	padding: 10px;
 	background-color: white;
-	padding: 30px;
 	color: black;
 	border-radius: 0px;
 	height: 100%;
+}
+
+.overlay_content {
+	padding: 30px;
+	padding-left: 400px;
+	padding-right: 400px;
 }
 
 

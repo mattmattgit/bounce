@@ -44,8 +44,11 @@ switch (num) {
         break;
 };
 
-var d = 250
-var c = 2500
+var d = 250,
+ 	c = 2500
+
+// var d = 0,
+//  	c = 0
 
 //opening
 $('.top').fadeIn();
@@ -64,6 +67,7 @@ $('.buttons').delay(18 * d).fadeIn();
 //about section
 $('#about').click( scroller, function () {
 	$('.buttons').hide()
+	$('#want').css('display', 'inline-block');
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
 	$(`#about_loader_1`).delay().fadeIn().delay(750).fadeOut(function () {
@@ -92,6 +96,7 @@ $('#about').click( scroller, function () {
 //how section
 $('#how').click( scroller, function (callback) {
 	$('.buttons').hide()
+	$('#want').css('display', 'inline-block');
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
 	$(`#how_loader_1`).fadeIn().delay(750).fadeOut(function () {
@@ -134,6 +139,7 @@ $('#how').click( scroller, function (callback) {
 //contact section
 $('#contact').click( scroller, function () {
 	$('.buttons').hide()
+	$('#want').css('display', 'inline-block');
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').show();
 	$('#contact_loader_1').delay().fadeIn().delay(c - 2000).fadeOut(function () {$(this).remove(scroller)});
@@ -142,4 +148,16 @@ $('#contact').click( scroller, function () {
 	$('#contact_2').delay(2 * c - 1000).fadeIn(scroller);
 	$('#contact').remove();
 	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
+});
+
+$('#want').click( scroller, function () {
+	$('.buttons').hide()
+	$('#want_section').insertBefore('.buttons');
+	$('#want_section').show(scroller);
+	$('#want_loader_1').delay().fadeIn().delay(c - 2000).fadeOut(function () {$(this).remove(scroller)});
+	$('#want_1').delay(c - 1000).fadeIn(scroller);
+	$('#want_loader_2').delay(c - 500).fadeIn().delay(1000).fadeOut(function () {$(this).remove(scroller)});
+	$('#want_2').delay(2 * c - 1000).fadeIn(scroller);
+	$('#want').remove();
+	$('.buttons').delay(2 * c - 1000).fadeIn(scroller);
 });

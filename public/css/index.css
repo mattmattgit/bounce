@@ -1,3 +1,8 @@
+.tester {
+	background-color: black;
+	padding: 20px;
+}
+
 #about_section, #about_1, #about_2, #about_3, #more_about {
 	display: none;
 }
@@ -30,6 +35,9 @@
 	display: none;
 }
 
+#want_section, #want, #want_loader_1, #want_loader_2, #want_1, #want_2 {
+	display: none;
+}
 
 a {
 	font-size: 0.75em;

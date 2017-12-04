@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<link rel="stylesheet" type="text/css" href="/css/overlay.css">
+	<link rel="stylesheet" type="text/css" href="/css/formInput.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -13,11 +14,13 @@
 	
 </div>
 
+
 <div class="container">
   <nav class="title">
     <img src="/img/bounce.png" width="150px"/>
   </nav>
 </div>
+
 
 <body>
 
@@ -42,6 +45,7 @@
 				<div id="how" class="clicker"><center><p>How?</p></center></div>
 				<div id="demo" class="clicker"><center><p>Demo</p></center></div>
 				<div id="contact" class="clicker"><center><p>Contact</p></center></div>
+				<div id="want" class="clicker"><p>I want one</p></div>
 				<div class="gap"></div>
 			</center>
 		</div>
@@ -126,7 +130,7 @@
 	<div id="more_how" class="view_more"><center><p>More info +</i></p></center></div><br>
 </div>
 
-
+<!-- DEMO SECTION -->
 <div id="demo_section">
 	<div class="clicked">
 		<center><p>Demo</p></center>
@@ -141,6 +145,8 @@
 	<div id="more_demo_tw" class="view_more"><center><p>Chat with us on Twitter</p></center></div><br>
 </div>
 
+
+<!-- CONTACT SECTION -->
 <div id="contact_section">
 	<div class="clicked"><center><p>Contact</p></center></div>
 	<br><br><br>
@@ -151,6 +157,44 @@
 	<div id="contact_2" class="large"><p>Or call us on 07979 946655</p></div><br>
 </div>
 
+<!-- WANT -->
+<div id="want_section">
+	<div class="clicked"><center><p>I want one</p></center></div>
+	<br><br><br>
+	<div id="want_loader_1"><img src="img/loader.gif" width="50px"/></div>
+	<div id="want_1" class="large"><p>Great! First, what's your name?</p></div>
+	<div class="gap"></div>
+	<div id="want_loader_2"><img src="img/loader.gif" width="50px"/></div>
+
+<div id="want_2" class="clipping">
+<br>
+
+
+  <form>
+    
+    <div class="group">      
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Name</label>
+    </div>
+      
+    <div class="group">      
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email</label>
+    </div>
+    
+  </form>
+</div>      
+
+  
+
+	<br>
+</div>
+
+<!-- OVERLAY ABOUT -->
 <div id="overlay_about">
 	<div class="overlay_white">
 		<div class="row title_row">
@@ -194,7 +238,7 @@
 		<div class="types_of_interface">
 			<div class="overlay_content">
 			<p>Right now there are two types of chat interfaces:</p>
-			<div class="example_block">
+			<div>
 			<h2>Voice assistants</h2>
 			<p>This involves the user interacting with their device using voice only. Current examples:</p>
 			<br>
@@ -211,7 +255,7 @@
 
 			<br><br>
 
-			<div class="example_block">
+			<div>
 			<h2>Chatbots</h2>
 			<p>This involves the user typing their input as you would text a friend. Current examples:</p>
 			<br>
@@ -311,8 +355,6 @@
 		</div>
 	</div>
 	</div>
-
-	
 </div>
 
 <div id="overlay_how">
@@ -325,8 +367,9 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
 <script src="/js/charts.js"></script>
+<script src="/js/formInput.js"></script>
 <script src="/js/index.js"></script>
-<script src="/js/utils.js"></script>
 </body>
 </html>

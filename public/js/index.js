@@ -52,7 +52,7 @@ var d = 250,
 
 //opening
 $('.top').fadeIn();
-$(`#text_loader_1`).delay().fadeIn().delay(2 * d).fadeOut(function () {
+$(`#text_loader_1`).fadeIn().delay(2 * d).fadeOut(function () {
 		$(this).remove();
 	});
 $('#welcome_one').delay(6 * d).fadeIn();
@@ -70,7 +70,7 @@ $('#about').click( scroller, function () {
 	$('#want').css('display', 'inline-block');
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
-	$(`#about_loader_1`).delay().fadeIn().delay(750).fadeOut(function () {
+	$(`#about_loader_1`).fadeIn(scroller).delay(750).fadeOut(function () {
 			$(this).remove(scroller);
 		});
 	$(`#about_1`).delay(c - 1000).fadeIn(scroller);
@@ -78,7 +78,7 @@ $('#about').click( scroller, function () {
 		$(`#about_${i}`).delay(i * c - 500).fadeIn(scroller);
 	}
 	for(let i = 1; i < 4; i++) {
-			$(`#about_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
+			$(`#about_loader_${i + 1}`).delay(i * c - 250).fadeIn(scroller).delay(1500).fadeOut(function () {
 			$(this).remove(scroller);
 		});
 	};
@@ -99,7 +99,7 @@ $('#how').click( scroller, function (callback) {
 	$('#want').css('display', 'inline-block');
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
-	$(`#how_loader_1`).fadeIn().delay(750).fadeOut(function () {
+	$(`#how_loader_1`).fadeIn(scroller).delay(750).fadeOut(function () {
 			$(this).remove(scroller);
 		});	
 	$(`#how_1`).delay(c - 1000).fadeIn(scroller);
@@ -108,7 +108,7 @@ $('#how').click( scroller, function (callback) {
 		console.log(`bubble in ${i}`, i * c - 500)
 	}
 	for(let i = 1; i < 10; i++) {
-			$(`#how_loader_${i + 1}`).delay(i * c - 250).fadeIn().delay(1500).fadeOut(function () {
+			$(`#how_loader_${i + 1}`).delay(i * c - 250).fadeIn(scroller).delay(1500).fadeOut(function () {
 			$(this).remove(scroller);
 		});
 	};

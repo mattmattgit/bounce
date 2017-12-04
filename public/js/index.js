@@ -1,7 +1,5 @@
-
 //opening
-// var d = 250
-var d = 0 
+var d = 250
 $('.top').fadeIn();
 $(`#text_loader_1`).delay(c).fadeIn().delay(2 * d).fadeOut(function () {
 		$(this).remove();
@@ -11,7 +9,7 @@ $(`#text_loader_2`).delay(8 * d).fadeIn().delay(3 * d).fadeOut(function () {
 		$(this).remove();
 	});
 $('#welcome_two').delay(14 * d).fadeIn();
-$('.buttons').delay(16 * d).fadeIn();
+$('.buttons').delay(24 * d).fadeIn();
 
 let scroller = function () {
 	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
@@ -59,8 +57,8 @@ switch (num) {
         break;
 };
 
-// var c = 2500
-var c = 0
+var c = 2500
+
 //about
 $('#about').click( function () {
 	$('.buttons').hide()
@@ -83,15 +81,10 @@ $('#about').click( function () {
 	$('#about').remove();
 	$("#more_about").click( () => {
 		$('#overlay_about').fadeIn("slow");	
-		$('.main-carousel').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true
-});
 		});
-		// $('#overlay_about').click( function() {
-		// 	$('#overlay_about').fadeOut("slow");
-		// });
+		$('#overlay_about').click( function() {
+			$('#overlay_about').fadeOut("slow");
+		});
 });
 
 //how 
@@ -148,3 +141,8 @@ $('#contact').click( function () {
 	$('#contact').remove();
 	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
 });
+
+window.sr = ScrollReveal();
+
+// as a selector...
+sr.reveal('.bar', { container: '#barContainer' });

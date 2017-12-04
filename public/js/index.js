@@ -62,7 +62,7 @@ $('.buttons').delay(18 * d).fadeIn();
 
 
 //about section
-$('#about').click( function () {
+$('#about').click( scroller, function () {
 	$('.buttons').hide()
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
@@ -90,7 +90,7 @@ $('#about').click( function () {
 });
 
 //how section
-$('#how').click( function (callback) {
+$('#how').click( scroller, function (callback) {
 	$('.buttons').hide()
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
@@ -132,7 +132,7 @@ $('#how').click( function (callback) {
 // });
 
 //contact section
-$('#contact').click( function () {
+$('#contact').click( scroller, function () {
 	$('.buttons').hide()
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').show();

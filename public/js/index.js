@@ -1,16 +1,3 @@
-//opening
-var d = 250
-$('.top').fadeIn();
-$(`#text_loader_1`).delay(c).fadeIn().delay(2 * d).fadeOut(function () {
-		$(this).remove();
-	});
-$('#welcome_one').delay(6 * d).fadeIn();
-$(`#text_loader_2`).delay(8 * d).fadeIn().delay(3 * d).fadeOut(function () {
-		$(this).remove();
-	});
-$('#welcome_two').delay(14 * d).fadeIn();
-$('.buttons').delay(24 * d).fadeIn();
-
 let scroller = function () {
 	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
 }
@@ -57,9 +44,24 @@ switch (num) {
         break;
 };
 
+var d = 250
 var c = 2500
 
-//about
+//opening
+$('.top').fadeIn();
+$(`#text_loader_1`).delay().fadeIn().delay(2 * d).fadeOut(function () {
+		$(this).remove();
+	});
+$('#welcome_one').delay(6 * d).fadeIn();
+$(`#text_loader_2`).delay(8 * d).fadeIn().delay(3 * d).fadeOut(function () {
+		$(this).remove();
+	});
+$('#welcome_two').delay(14 * d).fadeIn();
+$('.buttons').delay(18 * d).fadeIn();
+
+
+
+//about section
 $('#about').click( function () {
 	$('.buttons').hide()
 	$('#about_section').insertBefore('.buttons');
@@ -87,7 +89,7 @@ $('#about').click( function () {
 		});
 });
 
-//how 
+//how section
 $('#how').click( function (callback) {
 	$('.buttons').hide()
 	$('#how_section').insertBefore('.buttons');
@@ -112,11 +114,11 @@ $('#how').click( function (callback) {
 		$('#overlay_how').fadeIn("slow");		
 		});
 		$('#overlay_how').click( function() {
-			$('#overlay_how').fadeOut("slow");
+			$('#overlay_how').fadeOut(scroller);
 		});
 });
 
-//demo
+//demo section
 // $('#demo').click( function () {
 // 	$('#demo_section').insertBefore('.buttons');
 // 	$('#demo_section').fadeIn("slow");
@@ -129,7 +131,7 @@ $('#how').click( function (callback) {
 // 		});
 // });
 
-//contact
+//contact section
 $('#contact').click( function () {
 	$('.buttons').hide()
 	$('#contact_section').insertBefore('.buttons');
@@ -141,8 +143,3 @@ $('#contact').click( function () {
 	$('#contact').remove();
 	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
 });
-
-window.sr = ScrollReveal();
-
-// as a selector...
-sr.reveal('.bar', { container: '#barContainer' });

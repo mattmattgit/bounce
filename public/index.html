@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<link rel="stylesheet" type="text/css" href="/css/overlay.css">
 	<link rel="stylesheet" type="text/css" href="/css/formInput.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -22,7 +23,19 @@
 </div>
 
 
-<body>
+<!-- <div class="container">`
+	<div class="emailBox">
+		<form class="form-wrap">
+		  <div class="input">
+			<label for="mail">Email address</label>
+			<input type="email" name="mail" autocomplete="off">
+			</div>
+			 <svg class="line">
+		</svg>
+		</form>
+	</div>
+
+</div> -->
 
 <div class="top container">
 	<center><h1>All Chatbots Are Chatty. <br>But Some Are More Chatty Than Others.</h1><center>
@@ -162,31 +175,19 @@
 	<div class="clicked"><center><p>I want one</p></center></div>
 	<br><br><br>
 	<div id="want_loader_1"><img src="img/loader.gif" width="50px"/></div>
-	<div id="want_1" class="large"><p>Great! First, what's your name?</p></div>
+	<div id="want_1" class="large"><p>Great! Send us your email address and we'll be in contact soon!</p></div>
 	<div class="gap"></div>
 	<div id="want_loader_2"><img src="img/loader.gif" width="50px"/></div>
-
-<div id="want_2" class="clipping">
-<br>
-
-
-  <form>
-    
-    <div class="group">      
-      <input type="text" required>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Name</label>
-    </div>
-      
-    <div class="group">      
-      <input type="text" required>
-      <span class="highlight"></span>
-      <span class="bar"></span>
-      <label>Email</label>
-    </div>
-    
-  </form>
+	<div id="want_2" class="emailBox">
+		<form id="email-form" class="form-wrap">
+		  <div class="input">
+			<label for="mail">Email address</label>
+			<input type="email" name="mail" autocomplete="off">
+			</div>
+			 <svg class="line">
+		</svg>
+		</form>
+	</div>
 </div>      
 
   
@@ -365,11 +366,14 @@
 	</div>
 </div>
 
-
+<script src="/js/functions.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
 <script src="/js/charts.js"></script>
+<script src="socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
 <script src="/js/formInput.js"></script>
+<script src="/js/info.js"></script>
 <script src="/js/index.js"></script>
+
 </body>
 </html>

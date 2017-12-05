@@ -166,10 +166,9 @@ p {
 	box-shadow: 1px 1px 1px rgba(220,220,220, 0.9);
 }
 
-
 .buttons {
 	display: none;
-	padding-bottom: 50px;
+	padding-bottom: 200px;
 }
 
 
@@ -302,10 +301,10 @@ h4 {
 	border-radius: 10px;
 	background-color: white;
 	width: 50%;
-	display: none;
 }
 
 .buttons {
+	z-index: 1;
 	display: none;
 	padding-bottom: 100px;
 }

@@ -1,54 +1,8 @@
-let scroller = function () {
-	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
-}
+// var d = 250,
+//  	c = 2500
 
-//location
-$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
-  $('#how_9').html(`<div>From ${data.city}, ${data.region_name} to the North Pole is ${Math.round(data.latitude * 69)} miles.</div>` + '<br' +
-  	`<div class="row"><center><img src="/img/north-pole.jpg" width="250px"/></center></div>`);
-});
-
-//news stories
-const keyNews = 'ddeff3a422bf4bb0bf7b4d3e630e448c'
-
-let urlNews = 'https://newsapi.org/v2/top-headlines?' +
-          'sources=bbc-news&' +
-          `apiKey=${keyNews}`;
-
-let num = Math.floor((Math.random() ) * 5)
-
-$.get( urlNews, function( data ) {
-  $('#how_7').html(`<div class="row"><center><strong>${data.articles[num].title}</strong></center></div>` + `<hr>` +
-  	`<div class="row"><center><img src="${data.articles[num].urlToImage}" width="250px"/></center></div>` + `<br>` +
-  	`<div class="row">${data.articles[num].description}</div>` + `<hr>` +
-  	`<a href="${data.articles[num].url}"><p>${data.articles[num].url}</p></a>`);
-});
-
-//pictures
-
-switch (num) {
-    case 0:
-        $('#how_5').html('<div class="row"><center><img src="/img/breakfast.jpg" width="250px"/></center></div>');
-        break;
-    case 1:
-        $('#how_5').html('<div class="row"><center><img src="/img/arm-pillow.jpg" width="250px"/></center></div>');
-        break;
-    case 2:
-        $('#how_5').html('<div class="row"><center><img src="/img/doggy.jpg" width="250px"/></center></div>');
-        break;
-    case 3:
-        $('#how_5').html('<div class="row"><center><img src="/img/shower-curtain.jpg" width="250px"/></center></div>');
-        break;
-    case 4:
-        $('#how_5').html('<div class="row"><center><img src="/img/bacon-bandages.jpg" width="250px"/></center></div>');
-        break;
-};
-
-var d = 250,
- 	c = 2500
-
-// var d = 0,
-//  	c = 0
+var d = 0,
+ 	c = 0
 
 //opening
 $('.top').fadeIn();
@@ -62,11 +16,10 @@ $(`#text_loader_2`).delay(8 * d).fadeIn().delay(3 * d).fadeOut(function () {
 $('#welcome_two').delay(14 * d).fadeIn();
 $('.buttons').delay(18 * d).fadeIn();
 
-
-
 //about section
 $('#about').click( scroller, function () {
 	$('.buttons').hide()
+	$('#about').remove();
 	$('#want').css('display', 'inline-block');
 	$('#about_section').insertBefore('.buttons');
 	$('#about_section').show();
@@ -84,9 +37,8 @@ $('#about').click( scroller, function () {
 	};
 	$('#more_about').delay(3 * c).fadeIn(scroller);
 	$('.buttons').delay(3.5 * c).fadeIn(scroller);
-	$('#about').remove();
 	$("#more_about").click( () => {
-		$('#overlay_about').fadeIn("slow");	
+		$('#overlay_about').slideDown("slow");	
 		});
 		$('#overlay_about').click( function() {
 			$('#overlay_about').fadeOut("slow");
@@ -95,7 +47,11 @@ $('#about').click( scroller, function () {
 
 //how section
 $('#how').click( scroller, function (callback) {
+	newsFunction();
+	picsFunction();
+	locationFunction();
 	$('.buttons').hide()
+	$('#how').remove();
 	$('#want').css('display', 'inline-block');
 	$('#how_section').insertBefore('.buttons');
 	$('#how_section').show();
@@ -114,12 +70,11 @@ $('#how').click( scroller, function (callback) {
 	};
 	$('#more_how').delay(10 * c).fadeIn(scroller);
 	$('.buttons').delay(10.5 * c).fadeIn(scroller);
-	$('#how').remove();
 	$("#more_how").click( () => {
-		$('#overlay_how').fadeIn("slow");		
+		$('#overlay_about').fadeIn("slow");		
 		});
-		$('#overlay_how').click( function() {
-			$('#overlay_how').fadeOut(scroller);
+		$('#overlay_about').click( function() {
+			$('#overlay_about').fadeOut(scroller);
 		});
 });
 
@@ -138,7 +93,8 @@ $('#how').click( scroller, function (callback) {
 
 //contact section
 $('#contact').click( scroller, function () {
-	$('.buttons').hide()
+	$('.buttons').hide();
+	$('#contact').remove();
 	$('#want').css('display', 'inline-block');
 	$('#contact_section').insertBefore('.buttons');
 	$('#contact_section').show();
@@ -146,18 +102,19 @@ $('#contact').click( scroller, function () {
 	$('#contact_1').delay(c - 1000).fadeIn(scroller);
 	$('#contact_loader_2').delay(c - 500).fadeIn().delay(1000).fadeOut(function () {$(this).remove(scroller)});
 	$('#contact_2').delay(2 * c - 1000).fadeIn(scroller);
-	$('#contact').remove();
+	
 	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
 });
 
+// i want one section
 $('#want').click( scroller, function () {
-	$('.buttons').hide()
+	$('.buttons').hide();
+	$('#want').remove();
 	$('#want_section').insertBefore('.buttons');
-	$('#want_section').show(scroller);
+	$('#want_section').show();
 	$('#want_loader_1').delay().fadeIn().delay(c - 2000).fadeOut(function () {$(this).remove(scroller)});
 	$('#want_1').delay(c - 1000).fadeIn(scroller);
 	$('#want_loader_2').delay(c - 500).fadeIn().delay(1000).fadeOut(function () {$(this).remove(scroller)});
 	$('#want_2').delay(2 * c - 1000).fadeIn(scroller);
-	$('#want').remove();
-	$('.buttons').delay(2 * c - 1000).fadeIn(scroller);
 });
+

@@ -15,6 +15,15 @@ app.use(express.static(publicPath));
 io.on('connection', (socket) => {
 	console.log('new user');
 
+	socket.on('sendIP', (data) => {
+		console.log(data);
+	});
+
+	socket.on('addEmail', (email) => {
+		console.log(email);
+		io.emit('emailSuccess', `Thanks ${email.email}`)
+	});
+
 	socket.on('disconnect', () => {
 		console.log('bye')
 	});

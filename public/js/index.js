@@ -18,7 +18,7 @@ $('.buttons').delay(18 * d).fadeIn();
 
 //about section
 $('#about').click( scroller, function () {
-	$('.buttons').hide()
+	$('.buttons').hide();
 	$('#about').remove();
 	$('#want').css('display', 'inline-block');
 	$('#about_section').insertBefore('.buttons');

@@ -1,8 +1,8 @@
-// var d = 250,
-//  	c = 2500
+var d = 250,
+ 	c = 2500
 
-var d = 0,
- 	c = 0
+// var d = 0,
+//  	c = 0
 
 //opening
 $('.top').fadeIn();
@@ -41,7 +41,7 @@ $('#about').click( scroller, function () {
 	$("#more_about").click( () => {
 		$('#overlay_about').slideDown("slow");	
 		});
-		$('#overlay_about').click( function() {
+		$('#overlay-clicker').click( function() {
 			$('#overlay_about').fadeOut("slow");
 		});
 });
@@ -74,7 +74,7 @@ $('#how').click( scroller, function (callback) {
 	$("#more_how").click( () => {
 		$('#overlay_about').fadeIn("slow");		
 		});
-		$('#overlay_about').click( function() {
+		$('#overlay-clicker').click( function() {
 			$('#overlay_about').fadeOut(scroller);
 		});
 });

@@ -47,7 +47,7 @@ html, body {
   list-style-type: none;
 }
 
-.tab-items-list {
+.tab-items-list-mob {
   padding-top: 20px;
   background: #2196F3;
   width: 100%;
@@ -56,6 +56,10 @@ html, body {
   left: 0;
   text-align: left;
   bottom: 0;
+  display: none;
+}
+
+.tab-items-list {
   display: none;
 }
 
@@ -94,7 +98,7 @@ html, body {
   height: 100%;
   position: fixed;
   left: 0;
-/*  display: none;*/
+  display: none;
   text-align: left;
   bottom: 0;
   padding: 5px;
@@ -136,6 +140,10 @@ html, body {
   margin-top: 56px;
   font-size: 1.1em;
   margin-right: 50px;
+}
+
+.tab-items-list-mob {
+  display: none;
 }
 
 

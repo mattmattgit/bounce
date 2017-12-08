@@ -121,17 +121,17 @@ $('#want').click( scroller, function () {
 
 $('#menu').on('click', function () {
 	// var item = '.tab-item'
-	if ($('.tab-items-list').css('display') == 'none') {
-		$('.tab-items-list').show();
+	if ($('.tab-items-list-mob').css('display') == 'none') {
+		$('.tab-items-list-mob').show();
 	} else {
-		$('.tab-items-list').hide();
+		$('.tab-items-list-mob').hide();
 	}
 	
 })
 
 $('.tab-item-hide').on('click', function () {
 	// var item = '.tab-item'
-		$('.tab-items-list').hide();
+		$('.tab-items-list-mob').hide();
 
 	
 })

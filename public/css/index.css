@@ -39,15 +39,18 @@
 	display: none;
 }
 
-a {
-	font-size: 0.75em;
-}
-
 .top {
 	padding-top: 75px;
 	display: none;
 }
 
+#time {
+	display: none;
+}
+
+a {
+	font-size: 0.75em;
+}
 
 body, p, h1, h4{
 
@@ -206,8 +209,8 @@ p {
 .view_more {
 	border-style: solid;
 	border-width: 1px;
-	border-color: #2196F3;
-	color: #2196F3;
+	border-color: #6f7277;
+	color: #6f7277;
 	padding-top: 8px;
 	padding-bottom: 1px;
 	border-radius: 10px;
@@ -339,8 +342,8 @@ h4 {
 .view_more {
 	border-style: solid;
 	border-width: 1px;
-	border-color: #2196F3;
-	color: #2196F3;
+	border-color: #6f7277;
+	color: #6f7277;
 	padding-top: 8px;
 	padding-bottom: 1px;
 	border-radius: 10px;

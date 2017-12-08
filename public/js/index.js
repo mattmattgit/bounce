@@ -1,11 +1,12 @@
-var d = 250,
- 	c = 2500
+// var d = 250,
+//  	c = 2500
 
-// var d = 0,
-//  	c = 0
+var d = 0,
+ 	c = 0
 
 //opening
 $('.top').fadeIn();
+$('#time').text(timeNow).fadeIn();
 $(`#text_loader_1`).fadeIn().delay(2 * d).fadeOut(function () {
 		$(this).remove();
 	});

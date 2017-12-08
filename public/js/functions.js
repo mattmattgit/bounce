@@ -4,6 +4,9 @@ let scroller = function () {
 	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
 }
 
+//time
+let timeNow = moment().format('h:mm a')
+
 //news stories
 const newsFunction = function () {
 	const keyNews = 'ddeff3a422bf4bb0bf7b4d3e630e448c'
@@ -52,6 +55,7 @@ const locationFunction = function () {
 	$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
   	$('#how_9').html(`<div>From ${data.city}, ${data.region_name} to the North Pole is ${Math.round(data.latitude * 69)} miles.</div>` + '<br' +
   	`<div class="row"><center><img src="/img/north-pole.jpg" width="250px"/></center></div>`);
+  	console.log(data)
 });
 }
 

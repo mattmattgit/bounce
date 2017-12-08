@@ -16,6 +16,9 @@
     "handlebars-helper-asset": "^0.1.0",
     "hbs": "^4.0.1",
     "jquery": "^3.2.1",
+    "moment": "^2.19.3",
+    "mongodb": "^3.0.0-rc0",
+    "mongoose": "^4.13.6",
     "socket.io": "^2.0.4"
   }
 }

@@ -119,3 +119,19 @@ $('#want').click( scroller, function () {
 	$('#want_2').delay(2 * c - 1000).fadeIn(scroller);
 });
 
+$('#menu').on('click', function () {
+	// var item = '.tab-item'
+	if ($('.tab-items-list').css('display') == 'none') {
+		$('.tab-items-list').show();
+	} else {
+		$('.tab-items-list').hide();
+	}
+	
+})
+
+$('.tab-item-hide').on('click', function () {
+	// var item = '.tab-item'
+		$('.tab-items-list').hide();
+
+	
+})

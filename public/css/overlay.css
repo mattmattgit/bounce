@@ -92,7 +92,7 @@ html, body {
   height: 100%;
   position: fixed;
   left: 0;
-/*  display: none;*/
+  display: none;
   text-align: left;
   bottom: 0;
 }
@@ -117,7 +117,7 @@ html, body {
   height: 100%;
   position: fixed;
   left: 0;
-/*  display: none;*/
+  display: none;
   text-align: left;
   bottom: 0;
   padding: 5px;

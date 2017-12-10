@@ -2,6 +2,11 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.overlay_content {
+  padding: 5px;
+}
+
+
 .menu-item-mob {
   color: rgb(240, 240, 240);
   font-size: 16px;
@@ -13,8 +18,8 @@ html, body {
 }
 
 .content-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
@@ -87,7 +92,7 @@ html, body {
   height: 100%;
   position: fixed;
   left: 0;
-  display: none;
+/*  display: none;*/
   text-align: left;
   bottom: 0;
 }
@@ -100,7 +105,7 @@ html, body {
 	overflow: scroll;
 }
 
-.info_text, .types_of_interface, .why-better {
+#info_text, #types_of_interface, #why-better {
 	background-color: rgb(245,245,245);
 }
 
@@ -112,7 +117,7 @@ html, body {
   height: 100%;
   position: fixed;
   left: 0;
-  display: none;
+/*  display: none;*/
   text-align: left;
   bottom: 0;
   padding: 5px;

@@ -57,6 +57,10 @@ html, body {
   list-style-type:none;
 }
 
+.tab-item-mob {
+  list-style-type:none;
+}
+
 .tab-item-hide {
   list-style-type: none;
 }

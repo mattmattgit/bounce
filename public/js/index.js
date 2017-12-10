@@ -122,16 +122,15 @@ $('#want').click( scroller, function () {
 $('#menu').on('click', function () {
 	// var item = '.tab-item'
 	if ($('.tab-items-list-mob').css('display') == 'none') {
-		$('.tab-items-list-mob').show().slideDown("slow");
+		$('.tab-items-list-mob').fadeIn();
 	} else {
 		$('.tab-items-list-mob').hide();
 	}
 	
 })
 
-$('.tab-item-hide').on('click', function () {
+$('.tab-item-mob').on('click', function () {
 	// var item = '.tab-item'
-		$('.tab-items-list-mob').hide();
+		$('.tab-items-list-mob').fadeOut();
 
-	
 })

@@ -2,6 +2,16 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.menu-item-mob {
+  color: rgb(240, 240, 240);
+  font-size: 16px;
+}
+
+.menu-item-mob:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .content-section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -35,9 +45,13 @@ html, body {
 }
 
 #menu {
-  color: white;
+  color: rgb(240, 240, 240);
 }
 
+#menu:hover {
+  color: white;
+  cursor: pointer;
+}
 
 .tab-item {
   list-style-type:none;
@@ -51,11 +65,11 @@ html, body {
   padding-top: 20px;
   background: #2196F3;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   left: 0;
   text-align: left;
-  bottom: 0;
+  top: 0;
   display: none;
 }
 
@@ -88,10 +102,6 @@ html, body {
 
 @media (min-width: 1024px) {
 
-.options {
-  height: 80px;
-}
-
 #overlay_about {
   background: rgba(0,0,0,0.9);
   width: 100%;
@@ -102,20 +112,6 @@ html, body {
   text-align: left;
   bottom: 0;
   padding: 5px;
-}
-
-
-#overlay_demo {
-  background: rgba(0,0,0,0.9);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  display: none;
-  text-align: center;
-  bottom: 0;
-  padding: 5px;
-
 }
 
 .overlay_white {
@@ -132,12 +128,33 @@ html, body {
   padding-right: 400px;
 }
 
+#menu {
+  display: none;
+}
+
+.menu-item {
+  color: rgb(240, 240, 240);
+}
+
+.menu-item:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.tab-items-list {
+  display: inline-block;
+  font-size: 17px;
+}
+
+.options {
+  height: 80px;
+}
 
 .tab-item {
-  color: rgb(250,250,250);
+  color: rgb(240,240,240);
   border-bottom: 2px solid;
   display: inline-block;
-  margin-top: 56px;
+  margin-top: 41px;
   font-size: 1.1em;
   margin-right: 50px;
 }

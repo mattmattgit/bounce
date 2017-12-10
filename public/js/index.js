@@ -122,7 +122,7 @@ $('#want').click( scroller, function () {
 $('#menu').on('click', function () {
 	// var item = '.tab-item'
 	if ($('.tab-items-list-mob').css('display') == 'none') {
-		$('.tab-items-list-mob').show();
+		$('.tab-items-list-mob').show().slideDown("slow");
 	} else {
 		$('.tab-items-list-mob').hide();
 	}

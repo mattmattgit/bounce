@@ -22,12 +22,12 @@ p {
     z-index: 1;
   }
 
-  #menu {
+  #menu, #hide {
     padding-left: 5px;
     color: rgb(240, 240, 240);
   }
 
-  #menu:hover {
+  #menu:hover, #hide:hover {
     color: white;
     cursor: pointer;
   }
@@ -45,7 +45,7 @@ p {
   }
 
   .tab-items-list-mob {
-    padding-top: 20px;
+    padding-top: 10px;
     background: #2196F3;
     width: 100%;
     height: 100vh;
@@ -81,7 +81,7 @@ p {
 
   .menu-item-mob {
     color: rgb(240, 240, 240);
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .menu-item-mob:hover {
@@ -122,7 +122,7 @@ p {
     height: 100%;
     position: fixed;
     left: 0;
-    display: none;
+    /*display: none;*/
     text-align: left;
     bottom: 0;
   }

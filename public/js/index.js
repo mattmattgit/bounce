@@ -129,7 +129,7 @@ $('#menu').on('click', function () {
 	
 })
 
-$('.tab-item-mob').on('click', function () {
+$('#hide').on('click', function () {
 	// var item = '.tab-item'
 		$('.tab-items-list-mob').fadeOut();
 

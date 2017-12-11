@@ -120,7 +120,6 @@ $('#want').click( scroller, function () {
 });
 
 $('#menu').on('click', function () {
-	// var item = '.tab-item'
 	if ($('.tab-items-list-mob').css('display') == 'none') {
 		$('.tab-items-list-mob').fadeIn();
 	} else {
@@ -130,7 +129,10 @@ $('#menu').on('click', function () {
 })
 
 $('#hide').on('click', function () {
-	// var item = '.tab-item'
 		$('.tab-items-list-mob').fadeOut();
+})
 
+
+$('.tab-item-mob').on('click', function () {
+		$('.tab-items-list-mob').fadeOut();
 })

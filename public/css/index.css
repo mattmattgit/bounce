@@ -3,7 +3,7 @@
 	padding: 20px;
 }
 
-#about_section, #about_1, #about_2, #about_3, #more_about {
+#about_section, #about_1, #about_2, #about_3, #more_about, #about_loader_1, #about_loader_2, #about_loader_3  {
 	display: none;
 }
 
@@ -19,9 +19,6 @@
 	display: none;
 }
 
-#about_loader_1, #about_loader_2, #about_loader_3 {
-	display: none;
-}
 
 #contact_loader_1, #contact_loader_2 {
 	display: none;

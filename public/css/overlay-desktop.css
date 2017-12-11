@@ -53,17 +53,12 @@ p {
     text-align: left;
   }
 
-  /* specific section */
-
-    /* what section */
-
-
   /* general */
   section {
     padding-top: 70px;
     margin-left: 250px;
     margin-right: 250px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
 
   .standard-text {

@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<link rel="stylesheet" type="text/css" href="/css/overlay.css">
+	<link rel="stylesheet" type="text/css" href="/css/overlay-desktop.css">
 	<link rel="stylesheet" type="text/css" href="/css/formInput.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -182,19 +183,16 @@
 <!-- OVERLAY ABOUT -->
 <div id="overlay_about">
 	<div class="overlay_white">
-		<div class="container title_row">
-			<img src="/img/bounce.png" width="120px"/>
-		</div>
 
-		<div class="options">
-				<div class="container nav-tab-container">
-					
+		<!-- 	title options section -->
+
+			<div class="options">						
 					<ul class="tab-items-list">
-						<li class="tab-item"><a href="#what" class="menu-item">WHAT?</a></li>
-						<li class="tab-item"><a href="#example" class="menu-item">EXAMPLE</a></li>
-						<li class="tab-item"><a href="#types" class="menu-item">TYPES</a></li>
-						<li class="tab-item"><a href="#why-now" class="menu-item">WHY NOW?</a></li>
-						<li class="tab-item"><a href="#why-better" class="menu-item">WHY ARE THEY BETTER?</a></li>
+						<li class="tab-item"><a href="#what" class="menu-item">What?</a></li>
+						<li class="tab-item"><a href="#example" class="menu-item">Example</a></li>
+						<li class="tab-item"><a href="#types" class="menu-item">Types</a></li>
+						<li class="tab-item"><a href="#why-now" class="menu-item">Why now?</a></li>
+						<li class="tab-item"><a href="#why-better" class="menu-item">Why are they better?</a></li>
 					</ul>
 					<a id="menu" class="menu-item-mob">MENU</a>
 					<ul class="tab-items-list-mob">
@@ -203,55 +201,59 @@
 						<li class="tab-item-mob"><a href="#types" class="menu-item-mob">TYPES</a></li>
 						<li class="tab-item-mob"><a href="#why-now" class="menu-item-mob">WHY NOW?</a></li>
 						<li class="tab-item-mob"><a href="#why-better" class="menu-item-mob">WHY ARE THEY BETTER?</a></li>
-					</ul>
-				</div>
-				
+					</ul>				
 			</div>
 
+			<div class="options-title-div">
+				<h1 class="options-title">Understanding Chat Interfaces</h1>
+			</div>
 		
-		<article id="overlay-clicker" class="content">
-		<div class="info_text">
-
-		<section id="what" class="content-section">
-			
-			<div class="overlay_content">
-				<div class="row">
+	<article id="overlay-clicker" class="content">
+		<!-- what are chatbots section -->
+		<section id="what">			
+			<!-- 	<div class="row">
 					<img src="/img/robot.png" width="100%"/>
 				</div>
-				<br>
-				
+				<br> -->
+				<div class='standard-text'>
 					<h2 class="header">What is a chat interface?</h2>
 					<p>
-						Simply put a chat interface is: Any user interface that imitates chatting with a real human.The idea here is to communicate with technology in more natural, more human way. Making it easier to interact with your device.
+						Simply put a chat interface is: Any user interface that imitates chatting with a real human. 
 					</p>
-					<center><h1>''</h1></center>
 					<p>
-						We think that you should just be able to message a business in the same way you message a friend. You should get a quick response.  And you shouldn’t have to install a new app. - Mark Zuckerburg
+						The idea here is to communicate with technology in more natural, more human way. Making it easier to interact with your device.
 					</p>
-					<center><h1>''</h1></center>
 				</div>
+
+				<br>
+
+				<center><img src="/img/quote-marks.jpg" width="75px"/></center>
+
+				<blockquote>
+					We think that you should just be able to message a business in the same way you message a friend. You should get a quick response.  And you shouldn’t have to install a new app. - <strong>Mark Zuckerburg</strong>
+				</blockquote>
+		</section>
+
+		<!-- example section -->
+
+		<section id="example">
+
+			<div class='example_image'>
+					<center><img src='/img/yummy.png' width="75%"/></center>
 			</div>
 		
 		</section>
 
-		<section id="example" class="content-section">
+		<!-- different types of chat interface section -->
 
-		<div class='example_image'>
-			<div class="overlay_content">
-				<img src='/img/yummy.png' width="100%"/>
-			</div>
-		</div>
-		
-		</section>
-
-		<section id="types" class="content-section">
-
-		<div class="types_of_interface">
-			<div class="overlay_content">
+		<section id="types">			
 			<p>Right now there are two types of chat interfaces:</p>
-			<div>
+			
 			<h2>Voice assistants</h2>
-			<p>This involves the user interacting with their device using voice only. Current examples:</p>
+				<p>
+					This involves the user interacting with their device using voice only. Current examples:
+				</p>
+			
 			<br>
 
 			<div class="row">
@@ -261,16 +263,17 @@
 			</div>
 
 			<h4>Great for:</h4>
-			<p>Providing quick useful answers, playing music or performing hands free tasks (such as reading recipes).</p>
-			</div>
-
+				<p>
+					Providing quick useful answers, playing music or performing hands free tasks (such as reading recipes).
+				</p>
+			
+			<br><br>
+		
+				<h2>Chatbots</h2>
+				<p>This involves the user typing their input as you would text a friend. Current examples:</p>
+				
 			<br><br>
 
-			<div>
-			<h2>Chatbots</h2>
-			<p>This involves the user typing their input as you would text a friend. Current examples:</p>
-			<br>
-			<br>
 			<div class="row">
 				<center><div class="col-md-4"><img src="/img/messenger.png" width="100px"/></div></center>
 				<center><div class="col-md-4"><img src="/img/google_assistant.png" width="100px"/></div></center>
@@ -278,17 +281,17 @@
 			</div>
 
 			<h4>Great for:</h4>
-			<p>More complicated tasks and can include more interesting content (such as embedded media and links). They can also be connected to popular chat services such as your company Facebook.</p>
-			</div>
-			</div>
-		</div>
-
+				<p>
+					More complicated tasks and can include more interesting content (such as embedded media and links). They can also be connected to popular chat services such as your company Facebook.
+				</p>
+		
 		</section>
+<!-- 
+		why is now the right time section -->
 
-		<section id="why-now" class="content-section">
+		<section id="why-now">
 
 		<div class="why_now">
-			<div class="overlay_content">
 			<h2 class="header">Why is this important to you now?</h2>
 			<p>Until very recently the technology simply hasn’t been up to the task. However, all the ingredients are now available to make chat interfaces a reality.</p>
 			<hr>
@@ -324,30 +327,38 @@
 					<h4 class="second_header">People are chatting more than ever</h4>
 					<p>It is all very well having the technology, but having applications on which it can be used is crucial. There are over 3 billion monthly users of the 3 largest chat apps.</p>
 				</div>
-			</div>
+		
 			</div>
 
 		</div>
 
 		</section>
 
-		<section id="why-better" class="content-section">
+		<!-- why are chatbots better section -->
+
+		<section id="why-better">
 
 		<div class='why-better'>
-			<div class="overlay_content">
 			<h1 class="header">Why is a chat interface better than your app?</h1>
-
-			<h4 class="second_header">It’s where your customers are</h4>
+			<div class="row">
+			<div class="col-md-6"> 
+			
 
 			<div class='chart'>
-				<canvas id="userData" width="60%"></canvas>
+				<canvas id="userData"></canvas>
 			</div>
-			<br>
+			</div>
 			
+			<div class="col-md-6">
+			<h4 class="second_header">It’s where your customers are</h4>
 			<p>
 				Chat interfaces allow instant access to billions of users. Additionally android are now bundling google assistant with all software - over 2 billion phones use Android as their operating system.
 			</p>
+			</div>
+			</div>
 			<hr>
+			<div class="row">
+			
 			<h4 class="second_header">Faster</h4>
 			<p>
 				Chat interfaces are instant.
@@ -355,25 +366,27 @@
 			<p>
 				On average users wait 3½ minutes for customer service agents. In the modern world your customers simply are not prepared to wait.
 			</p>
+			</div>
 			<hr>
+			<div class="row">
 			<h4 class="second_header">Easier</h4>
 			<p>
 				If you can talk to a person you can talk to a chat interface.Unlike with an app, users don’t have to learn a different interface for each platform, they use natural language.
 			</p>
+			</div>
 			<hr>
+			<div class="row">
 			<h4 class="second_header">No need to download</h4>
 			<p>
 			Chat interfaces can be integrated directly into the most popular messaging apps and don’t have to be separately downloaded. If your users have Facebook, Twitter or a number of other messaging and social media apps they can interact with your chatbot.
 			</p>
 			</div>
+			</div>
 		</div>
 		</section>
 	</div>
-	</div>
 </div>
 </article>
-
-
 
 
 <script src="/js/lib/moment.js"></script>

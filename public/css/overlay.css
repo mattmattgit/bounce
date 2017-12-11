@@ -1,176 +1,137 @@
-html, body {
+/*everything*/
+html, body, p, h1, h4, a {
   font-family: 'Open Sans', sans-serif;
 }
 
-.overlay_content {
-  padding: 5px;
+p {
+  font-size: 1.1em
 }
+/*top section*/
+  
+  /*sticky header*/
+  .options {
+    padding-top: 10px;
+    position: relative;
+    text-align: left;
+    background-color: #2196F3;
+    height: 40px;
+    color: white;
+    position: -webkit-sticky;  
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+  }
 
+  #menu {
+    padding-left: 5px;
+    color: rgb(240, 240, 240);
+  }
 
-.menu-item-mob {
-  color: rgb(240, 240, 240);
-  font-size: 16px;
-}
+  #menu:hover {
+    color: white;
+    cursor: pointer;
+  }
 
-.menu-item-mob:hover {
-  color: white;
-  text-decoration: none;
-}
+  .tab-item {
+    list-style-type:none;
+  }
 
-.content-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  .tab-item-mob {
+    list-style-type:none;
+  }
 
+  .tab-item-hide {
+    list-style-type: none;
+  }
 
-.title_row {
-  padding-bottom: 10px
-}
+  .tab-items-list-mob {
+    padding-top: 20px;
+    background: #2196F3;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    text-align: left;
+    top: 0;
+    display: none;
+  }
 
-.header {
-	color: #4288f7;
-}
+  .tab-items-list {
+    display: none;
+  }
 
-.second_header {
-	color: #f44d3a;
-}
+  /* title section */
 
-.options {
-  padding-top: 10px;
-  position: relative;
-  text-align: left;
-  background-color: #2196F3;
-  height: 40px;
-  box-shadow: 3px 3px 3px 3px rgba(0,0,0, 0.4);
-  color: white;
-  position: -webkit-sticky;  
-  position: sticky;
-  top: 0; 
-  z-index: 1;
-}
+  .options-title-div {
+    padding-top: 10px;
+    position: relative;
+    text-align: left;
+    background-color: #2196F3;
+    top: 0; 
+    height: 75px;
+  }
 
-#menu {
-  color: rgb(240, 240, 240);
-}
+  .options-title {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+  }
 
-#menu:hover {
-  color: white;
-  cursor: pointer;
-}
+/* mobile menu overlay */
 
-.tab-item {
-  list-style-type:none;
-}
+  .menu-item-mob {
+    color: rgb(240, 240, 240);
+    font-size: 16px;
+  }
 
-.tab-item-mob {
-  list-style-type:none;
-}
+  .menu-item-mob:hover {
+    color: white;
+    text-decoration: none;
+  }
 
-.tab-item-hide {
-  list-style-type: none;
-}
+/* general */
 
-.tab-items-list-mob {
-  padding-top: 20px;
-  background: #2196F3;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  text-align: left;
-  top: 0;
-  display: none;
-}
+  .header {
+  	color: #4288f7;
+    font-size: 1.5em;
+  }
 
-.tab-items-list {
-  display: none;
-}
+  .second_header {
+  	color: #f44d3a;
+  }
 
-#overlay_about {
-  background: rgba(0,0,0,0.9);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  display: none;
-  text-align: left;
-  bottom: 0;
-}
+  section {
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-.overlay_white {
-	background-color: white;
-	color: black;
-	border-radius: 0px;
-	height: 100%;
-	overflow: scroll;
-}
+  .standard-text {
+    margin-right: 0px;
+  }
 
-#info_text, #types_of_interface, #why-better {
-	background-color: rgb(245,245,245);
-}
+  blockquote {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
-@media (min-width: 1024px) {
+/* overall overlay */
+  #overlay_about {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+  /*  display: none;*/
+    text-align: left;
+    bottom: 0;
+  }
 
-#overlay_about {
-  background: rgba(0,0,0,0.9);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  display: none;
-  text-align: left;
-  bottom: 0;
-  padding: 5px;
-}
+  .overlay_white {
+  	background-color: white;
+  	color: black;
+  	border-radius: 0px;
+  	height: 100%;
+    overflow-y: scroll;
+  }
 
-.overlay_white {
-  padding-top: 10px;
-  background-color: white;
-  color: black;
-  border-radius: 0px;
-  height: 100%;
-}
-
-.overlay_content {
-  padding: 30px;
-  padding-left: 400px;
-  padding-right: 400px;
-}
-
-#menu {
-  display: none;
-}
-
-.menu-item {
-  color: rgb(240, 240, 240);
-}
-
-.menu-item:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.tab-items-list {
-  display: inline-block;
-  font-size: 17px;
-}
-
-.options {
-  height: 80px;
-}
-
-.tab-item {
-  color: rgb(240,240,240);
-  border-bottom: 2px solid;
-  display: inline-block;
-  margin-top: 41px;
-  font-size: 1.1em;
-  margin-right: 50px;
-}
-
-.tab-items-list-mob {
-  display: none;
-}
-
-
-}

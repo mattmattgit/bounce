@@ -29,17 +29,19 @@ h4 {
 }
 
 .small {
+	font-size: 11px;
 	color: white;
 	padding-left: 20px;
 	padding-top: 8px;
 	padding-bottom: 1px;
 	border-radius: 10px;
 	background-color: #2196F3;
-	width: 12%;
+	width: 11%;
 	display: none;
 }
 
 .medium {
+	font-size: 11px;
 	color: white;
 	padding-left: 20px;
 	padding-top: 8px;
@@ -51,6 +53,7 @@ h4 {
 }
 
 .large {
+	font-size: 11px;
 	color: white;
 	align-items: center;
 	padding-left: 20px;
@@ -61,10 +64,11 @@ h4 {
 	background-color: #2196F3;
 	max-width: 50%;
 	display: none;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .clipping {
+	font-size: 11px;
 	color: black;
 	align-items: center;
 	border-style: solid;
@@ -80,13 +84,15 @@ h4 {
 }
 
 .buttons {
+	font-size: 11px;
 	z-index: 1;
 	display: none;
 	padding-bottom: 20px;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .clicker {
+	font-size: 11px;
 	display: inline-block;
 	border-style: solid;
 	border-width: 1px;
@@ -100,6 +106,7 @@ h4 {
 }
 
 .clicked {
+	font-size: 11px;
 	float: right;
 	color: black;
 	padding-top: 8px;
@@ -107,7 +114,6 @@ h4 {
 	border-radius: 10px;
 	background-color: #e0e2e5;
 	width: 20%;
-	font-size: 12px;
 }
 
 .view_more:hover {
@@ -123,7 +129,7 @@ h4 {
 	padding-bottom: 1px;
 	border-radius: 10px;
 	width: 35%;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .gap {

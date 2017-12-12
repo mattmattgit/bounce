@@ -1,22 +1,22 @@
 
 
-var userData = document.getElementById('userData').getContext('2d');
+// var userData = document.getElementById('userData').getContext('2d');
 
-var chart = new Chart(userData, {
-    type: 'horizontalBar',
-    data: {
-        labels: ["Facebook", "WhatsApp", "Messenger", "WeChat", "Twitter"],
-        datasets: [{
-            backgroundColor: ['#3b5998', '#4dc247', '#007ee5', '#4dc247', '#1dcaff'],
-            borderColor: 'rgba(0,0,0, 0.6)',
-            borderWidth: 1,
-            data: [2.1, 1.3, 1.3, 1, 0.330],
-        }]
-    },
-    options: {
-        legend: false
-    }
-});
+// var chart = new Chart(userData, {
+//     type: 'bar',
+//     data: {
+//         labels: ["Messenger", "WhatsApp", "Facebook"],
+//         datasets: [{
+//             backgroundColor: ['rgba(0,0,255,0.7)', 'rgba(0,255,0,0.7)', 'rgba(0,0,255,0.7)'],
+//             borderColor: 'rgba(0,0,0, 0.6)',
+//             borderWidth: 1,
+//             data: [1.2, 1.3, 2.1],
+//         }]
+//     },
+//     options: {
+//         legend: false
+//     }
+// });
 
 var machineLearning = document.getElementById('machineLearning').getContext('2d');
 
@@ -54,27 +54,27 @@ var myLineChart = new Chart(machineLearning, {
     }
 });
 
-var annualFund = document.getElementById('annualFund').getContext('2d');
+// var annualFund = document.getElementById('annualFund').getContext('2d');
 
-var chart = new Chart(annualFund, {
-    type: 'bar',
-    data: {
-        labels: ["2012", "2013", "2014", "2015", "2016"],
-        datasets: [{
-            backgroundColor: ['#8bd1f9', '#46b9fc', '#3e4df9', '#3b5998', '#020a68'],
-            borderColor: 'rgba(0,0,0, 0.6)',
-            borderWidth: 1,
-            data: [0.75, 1.3, 2.6, 3.7, 4.8],
-        }]
-    },
-    options: {
-        legend: false,
-        title: {
-            display: true,
-            text: 'Machine Learning Annual Funding'
-            }
-    }
-});
+// var chart = new Chart(annualFund, {
+//     type: 'bar',
+//     data: {
+//         labels: ["2012", "2013", "2014", "2015", "2016"],
+//         datasets: [{
+//             backgroundColor: ['#8bd1f9', '#46b9fc', '#3e4df9', '#3b5998', '#020a68'],
+//             borderColor: 'rgba(0,0,0, 0.6)',
+//             borderWidth: 1,
+//             data: [0.75, 1.3, 2.6, 3.7, 4.8],
+//         }]
+//     },
+//     options: {
+//         legend: false,
+//         title: {
+//             display: true,
+//             text: 'Machine Learning Annual Funding'
+//             }
+//     }
+// });
 
 var chatApps = document.getElementById('chatApps').getContext('2d');
 

@@ -70,6 +70,10 @@ p {
     margin-right: 100px;
   }
 
+  footer {
+    padding-left: 100px;
+  }
+
   .header {
     color: #4288f7;
     font-size: 2em;

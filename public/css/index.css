@@ -44,7 +44,7 @@
 #time {
 	display: none;
 	color: #6f7277;
-	font-size: 0.75em;
+	font-size: 1em;
 }
 
 a {
@@ -70,7 +70,7 @@ p {
 }
 
 svg {
-	z-index: -1
+	z-index: -1;
 }
 
 .top-strip {

@@ -11,6 +11,7 @@ p {
   /*sticky header*/
   .options {
     padding-top: 10px;
+    padding-bottom: 35px;
     position: relative;
     text-align: left;
     background-color: #2196F3;
@@ -113,6 +114,57 @@ p {
   blockquote {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  footer {
+    padding: 5px;
+    height: 100px;
+    background-color: grey;
+    color: white;
+  }
+
+/* specific section */
+  
+  .panel1, .panel2, .panel3, .panel4 {
+    background-color: #a9ecf9;
+    height: 400px;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .panel2 {
+     background-color: #81abea;
+  }
+
+  .panel3 {
+     background-color: #d9fcf1;
+  }
+
+  .panel4 {
+     background-color: #d9defc;
+  }
+
+  .facebook-phone {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+  }
+
+  .rocket {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+
+  .easy {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+  }
+
+ .cross {
+    position: absolute;
+    bottom: 0;
   }
 
 /* overall overlay */

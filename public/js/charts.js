@@ -1,4 +1,11 @@
+// var userData = document.getElementById('userData').getContext('2d');
 
+// var chart = new Chart(userData, {
+//     type: 'bar',
+//     options: {
+//         legend: false
+//     }
+// });
 
 // var userData = document.getElementById('userData').getContext('2d');
 

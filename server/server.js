@@ -18,18 +18,6 @@ let io = socket(server);
 
 app.use(express.static(publicPath));
 
-// app.post('/todos', (req,res) => {
-// 	var newTodo = new Todo( {
-// 		text: req.body.text
-// 	})
-
-// 	newTodo.save().then((r) => {
-// 		res.send(r);
-// 	}, (e) => {
-// 		res.status(400).send(e);
-// 	});
-// });
-
 io.on('connection', (socket) => {
 	console.log('new user');
 

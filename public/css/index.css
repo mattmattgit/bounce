@@ -47,6 +47,10 @@
 	font-size: 1em;
 }
 
+#close {
+	display: none;
+}
+
 a {
 	font-size: 0.75em;
 }

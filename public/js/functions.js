@@ -6,12 +6,49 @@ window.scroll({
   behavior: 'smooth' 
 });
 //scrolling
-let scroller = function () {
+const scroller = function () {
 	 $("html, body").animate({ scrollTop: $("body").height() }, "slow");
 }
 
 //time
 let timeNow = moment().format('h:mm a')
+
+//overlay and menu functions
+
+const overlayIn = function () {
+	$('#overlay_about').slideDown("slow");	
+	$('#close').delay(1000).slideDown("slow");	
+		}
+
+$('#menu').on('click', function () {
+	if ($('.tab-items-list-mob').css('display') == 'none') {
+		$('.tab-items-list-mob').fadeIn();
+		$('#close').fadeOut();
+	} else {
+		$('.tab-items-list-mob').hide();
+	}
+	
+})
+
+$('#hide').on('click', function () {
+		$('.tab-items-list-mob').fadeOut();
+		$('#close').fadeIn();
+})
+
+$('.tab-item-mob').on('click', function () {
+		$('.tab-items-list-mob').fadeOut();
+})
+
+$('#close').on('click', function () {
+		$('#overlay_about').fadeOut("slow");
+		$('#close').hide();
+
+})
+
+$('#overlay-clicker').click( function() {
+		$('#overlay_about').fadeOut("slow");
+		$('#close').hide();
+	});
 
 //news stories
 const newsFunction = function () {

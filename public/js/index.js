@@ -38,12 +38,8 @@ $('#about').click( scroller, function () {
 	};
 	$('#more_about').delay(3 * c).fadeIn(scroller);
 	$('.buttons').delay(3.5 * c).fadeIn(scroller);
-	$("#more_about").click( () => {
-		$('#overlay_about').slideDown("slow");	
-		});
-		$('#overlay-clicker').click( function() {
-			$('#overlay_about').fadeOut("slow");
-		});
+	$("#more_about").click(overlayIn)
+
 });
 
 //how section
@@ -71,12 +67,8 @@ $('#how').click( scroller, function (callback) {
 	};
 	$('#more_how').delay(10 * c).fadeIn(scroller);
 	$('.buttons').delay(10.5 * c).fadeIn(scroller);
-	$("#more_how").click( () => {
-		$('#overlay_about').fadeIn("slow");		
-		});
-		$('#overlay-clicker').click( function() {
-			$('#overlay_about').fadeOut(scroller);
-		});
+	$("#more_how").click(overlayIn);
+
 });
 
 //demo section
@@ -118,22 +110,3 @@ $('#want').click( scroller, function () {
 	$('#want_loader_2').delay(c - 500).fadeIn().delay(1000).fadeOut(function () {$(this).remove(scroller)});
 	$('#want_2').delay(2 * c - 1000).fadeIn(scroller);
 });
-
-
-$('#menu').on('click', function () {
-	if ($('.tab-items-list-mob').css('display') == 'none') {
-		$('.tab-items-list-mob').fadeIn();
-	} else {
-		$('.tab-items-list-mob').hide();
-	}
-	
-})
-
-$('#hide').on('click', function () {
-		$('.tab-items-list-mob').fadeOut();
-})
-
-
-$('.tab-item-mob').on('click', function () {
-		$('.tab-items-list-mob').fadeOut();
-})

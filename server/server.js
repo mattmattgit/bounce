@@ -33,10 +33,10 @@ io.on('connection', (socket) => {
 
 		newUser.save().then((res) => {
 			console.log(res);
-			io.emit('emailSuccess', `Thanks ${email.email}`)
+			io.emit('emailSuccess', `${email.email}`)
 		}, (e) => {
 			console.log(e)
-			io.emit('emailSuccess', `Sorry we didn't get that. Balls`)
+			io.emit('emailSuccess', `Sorry we didn't get that. Try Dropping us an email at hello@timetobounce.co.uk`)
 		})
 		
 	});

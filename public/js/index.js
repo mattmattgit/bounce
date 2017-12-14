@@ -1,8 +1,8 @@
-var d = 250,
- 	c = 2500
+// var d = 250,
+//  	c = 2500
 
-// var d = 0,
-//  	c = 0
+var d = 0,
+ 	c = 0
 
 //opening
 $('.top').fadeIn();
@@ -118,6 +118,7 @@ $('#want').click( scroller, function () {
 	$('#want_loader_2').delay(c - 500).fadeIn().delay(1000).fadeOut(function () {$(this).remove(scroller)});
 	$('#want_2').delay(2 * c - 1000).fadeIn(scroller);
 });
+
 
 $('#menu').on('click', function () {
 	if ($('.tab-items-list-mob').css('display') == 'none') {

@@ -32,7 +32,6 @@ socket.on('emailSuccess', function (message) {
 
 	scroller()
 
-	$('.buttons').delay(3 * c -1500).fadeIn(scroller);
 });
 
 

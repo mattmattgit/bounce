@@ -1,8 +1,8 @@
-// var d = 250,
-//  	c = 2500
+var d = 250,
+ 	c = 2500
 
-var d = 0,
- 	c = 0
+// var d = 0,
+//  	c = 0
 
 //opening
 $('.top').fadeIn();

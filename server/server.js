@@ -4,10 +4,13 @@ const express = require('express');
 const http = require('http');
 const socket = require('socket.io')
 const path = require('path');
+const fs = require('fs');
 const {ObjectID} = require('mongodb');
+const nodeCookie = require('node-cookie');
 
 let {mongoose} = require('./db/mongoose.js');
 let {User} = require('./models/user.js');
+let utils = require('./utilFunctions.js');
 
 const publicPath = path.join(__dirname, '../public');
 
@@ -21,9 +24,16 @@ app.use(express.static(publicPath));
 io.on('connection', (socket) => {
 	console.log('new user');
 
-	socket.on('sendIP', (data) => {
-		console.log(data);
-	});
+
+	// socket.on('sendIP', (data) => {
+	// 	console.log(data);
+
+
+	// 		fs.appendFileSync('ips.json', JSON.stringify(data, null, 2));
+
+	// });
+
+	
 
 	socket.on('addEmail', (email) => {
 		console.log(email);

@@ -19,6 +19,7 @@
     "moment": "^2.19.3",
     "mongodb": "^3.0.0-rc0",
     "mongoose": "^4.13.6",
+    "node-cookie": "^2.0.2",
     "socket.io": "^2.0.4"
   }
 }

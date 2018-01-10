@@ -46,6 +46,10 @@ socket.on('emailSuccess', function (message) {
 
 });
 
+// socket.on('ipKnown', function (message) {
+// 	alert(message)
+// })
+
 socket.on('disconnect', function () {
 	console.log('broken');
 });

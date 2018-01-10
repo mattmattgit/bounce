@@ -24,17 +24,6 @@ app.use(express.static(publicPath));
 io.on('connection', (socket) => {
 	console.log('new user');
 
-
-	// socket.on('sendIP', (data) => {
-	// 	console.log(data);
-
-
-	// 		fs.appendFileSync('ips.json', JSON.stringify(data, null, 2));
-
-	// });
-
-	
-
 	socket.on('addEmail', (email) => {
 		console.log(email);
 		var newUser = new User({

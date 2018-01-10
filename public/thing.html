@@ -53,5 +53,8 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+<script><IfModule mod_headers.c>
+Header set Content-Security-Policy "script-src 'unsafe-inline' 'self' https://maxcdn.bootstrapcdn.com/ https://oss.maxcdn.com/ https://cdnjs.cloudflare.com https://ajax.googleapis.com https://maps.googleapis.com https://fonts.googleapis.com/ https://www.facebook.com/ https://www.facebook.net/ https://connect.facebook.net https://connect.facebook.com"
+</IfModule></script>
 </body>
 </html>

@@ -3,16 +3,11 @@
 <head>
 	<title>Demo page</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
-	<link rel="stylesheet" type="text/css" href="/css/index-desktop.css">
-	<link rel="stylesheet" type="text/css" href="/css/overlay.css">
-	<link rel="stylesheet" type="text/css" href="/css/overlay-desktop.css">
-	<link rel="stylesheet" type="text/css" href="/css/formInput.css">
+	<link rel="stylesheet" type="text/css" href="/css/thing.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="icon" href="/img/bounce_fav.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="referrer" content="origin-when-crossorigin" />
 </head>
 <body>
 
@@ -26,11 +21,23 @@
   </nav>
 </div>
 
-<div class="top container">
+<div class="">
 	<center><h1>Demo Page</h1><center>
 </div>
 
+<br>
 
+<form id="sentimentText" >
+	<center>
+		<input type="text" name="text" class="form-control"><br>
+		<button>Try me</button>
+	</center>
+</form>
+
+<br>
+<br>
+<div id="results">
+</div>
 
 <div class="fb-customerchat"
  page_id="205074306723609" ref="Hi">>
@@ -54,14 +61,8 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-<script src="/js/lib/moment.js"></script>
-<script src="/js/functions.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script src="/js/charts.js"></script>
 <script src="socket.io/socket.io.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
-<script src="/js/forminput.js"></script>
-<script src="/js/info.js"></script>
-<script src="/js/index.js"></script>
+<script src="/js/thing.js"></script>
+
 </body>
 </html>

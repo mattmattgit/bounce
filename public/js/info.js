@@ -12,7 +12,6 @@ socket.on('connect', function () {
 	});	
 });
 
-
 $('#email-form').on('submit', function (e) {
 	e.preventDefault();
 

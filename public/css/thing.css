@@ -1,0 +1,12 @@
+.formy {
+	padding: 100px;
+}
+
+#results {
+	font-size: 30px;
+}
+
+#sentimentText {
+	padding-right: 400px;
+	padding-left: 400px;
+}

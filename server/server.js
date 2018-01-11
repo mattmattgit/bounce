@@ -40,6 +40,17 @@ io.on('connection', (socket) => {
 		
 	});
 
+	socket.on('text', (output) => {
+		utils.sentimentFunction(output).then((res) => {
+			console.log(res)
+			io.emit('analysisSuccess', `${res}`)
+		}, (e) => {
+			console.log(e)
+			io.emit('emailSuccess', `Dunno mate`)
+		})
+
+	})
+
 	socket.on('disconnect', () => {
 		console.log('bye')
 	});

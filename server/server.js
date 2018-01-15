@@ -41,12 +41,28 @@ io.on('connection', (socket) => {
 	});
 
 	socket.on('text', (output) => {
-		utils.sentimentFunction(output).then((res) => {
+		utils.entitiesFunction(output).then((res) => {
 			console.log(res)
-			io.emit('analysisSuccess', `${res}`)
+			io.emit('analysisSuccess', res)
 		}, (e) => {
 			console.log(e)
-			io.emit('emailSuccess', `Dunno mate`)
+			io.emit('analysisSuccess', `Dunno mate`)
+		})
+
+		utils.sentimentFunction(output).then((res) => {
+			console.log(res)
+			io.emit('sentSuccess', res)
+		}, (e) => {
+			console.log(e)
+			io.emit('sentSuccess', `Dunno mate`)
+		})
+
+		utils.classFunction(output).then((res) => {
+			console.log(res)
+			io.emit('classSuccess', res)
+		}, (e) => {
+			console.log(e)
+			io.emit('classSuccess', `Dunno mate`)
 		})
 
 	})

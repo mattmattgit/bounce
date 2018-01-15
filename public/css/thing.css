@@ -1,12 +1,140 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.gap {
+	padding: 3px;
+}
+
+.top-strip {
+	  height: 5px;
+	  position: -webkit-sticky;
+  	  position: sticky;
+  	  top: 0;
+  	  background: red;
+      animation: colorchange 20s infinite; 
+      -webkit-animation: colorchange 20s infinite; 
+    }
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      75%  {background: orange;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange 
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      75%  {background: orange`;}
+      100% {background: red;}
+    }
+
 .formy {
 	padding: 100px;
 }
 
 #results {
-	font-size: 30px;
+	font-size: 14px;
 }
 
 #sentimentText {
 	padding-right: 400px;
 	padding-left: 400px;
+}
+
+.test-button {
+	color: white;
+	background-color: #4285F4;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.test-button:hover {
+	color: white;
+	background-color: #71a4f7;
+	
+}
+
+.input {
+	border-radius: 0;
+	resize: none;
+}
+
+.entity {
+	padding-top: 15px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 14px;
+	
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.person {
+	background-color: #e0d4cc;
+}
+
+.organization {
+	background-color: #f7856f;
+}
+
+.location {
+	background-color: #d8f79b;
+}
+
+.other {
+	background-color: #9ebdef;
+}
+
+.sentBad {
+	padding-top: 15px;
+	font-size: 14px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 15px;
+	background-color: #e54424;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.sentGood {
+	padding-top: 15px;
+	font-size: 14px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 15px;
+	background-color: #0eb73e;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.sentModGood {
+	padding-top: 15px;
+	font-size: 14px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 15px;
+	background-color: #569648;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.sentModBad {
+	padding-top: 15px;
+	font-size: 14px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 15px;
+	background-color: #d8830d;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.classRes {
+	padding-top: 15px;
+	font-size: 14px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 15px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+	background-color: #a2a3a5;
 }

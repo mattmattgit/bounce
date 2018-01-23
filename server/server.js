@@ -11,6 +11,7 @@ const nodeCookie = require('node-cookie');
 let {mongoose} = require('./db/mongoose.js');
 let {User} = require('./models/user.js');
 let utils = require('./utilFunctions.js');
+let twit = require('./twit.js');
 
 const publicPath = path.join(__dirname, '../public');
 
@@ -64,7 +65,17 @@ io.on('connection', (socket) => {
 			console.log(e)
 			io.emit('classSuccess', `Dunno mate`)
 		})
+	})
 
+	socket.on('twitCat', (output) => {
+		twit.getter(output.twitterCategories).then((res) => {
+			console.log(res)
+			io.emit('tweets', res)
+		}, (e) => {
+			console.log(e)
+			io.emit('tweets', `Nothing found`)
+		})
+		twit.sender(output)
 	})
 
 	socket.on('disconnect', () => {

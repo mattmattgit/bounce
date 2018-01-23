@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/twit.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="icon" href="/img/bounce_fav.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+
+<div class="top-strip">
+
+</div>
+<div class="gap"></div>
+<div class="gap"></div>
+<div class="container">
+  <nav class="title">
+    <img src="/img/bounce.png" width="120px"/>
+  </nav>
+</div>
+<div class="container">
+
+<br>
+<br>
+<center><img src="/img/twitter-bird.png" width="120px"/></center>
+
+
+<form id="twitCategories" >
+  <center>
+    <h3>Travel Pack Twitter Tool</h3>
+<p>Input your category below</p>
+    <input rows="10" type="text" name="text" class="form-control input"></input><br>
+    <button class="btn test-button">TRY ME</button>
+  </center>
+</form>
+
+<br><br>
+
+<div class="results">
+
+  <div id="searchInfo" class="col-md-4">
+    <div id="input"></div>
+  </div>
+
+  <div id="tweetResults" class="col-md-8">
+  </div>
+
+</div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="/js/twitSend.js"></script>
+<script type="text/javascript"> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '665238520531016',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.11'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+ </script>
+
+</body>
+</html>

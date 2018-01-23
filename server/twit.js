@@ -33,9 +33,9 @@ let getter = (topic) => {
 }
 
 let sender = (input) => {
-	T.post('statuses/update', { status: '@nrhsmith hello pickle!!!', in_reply_to_status_id: '955808965870440400' }, function(err, data, response) {
-		console.log(data)
-	})
+	// T.post('statuses/update', { status: '@nrhsmith hello pickle!!!', in_reply_to_status_id: '955808965870440400' }, function(err, data, response) {
+	// 	console.log(data)
+	// })
 }
 
 module.exports = {getter, sender}

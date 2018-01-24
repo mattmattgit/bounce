@@ -6,7 +6,7 @@ $('#twitCategories').on('submit', function (e) {
 	var twitCat = $('[name=text]')
 
 	$('#searchInfo').fadeIn('fast');
-	let search = `<p><strong>Search term:</strong> ${twitCat.val()}</p>`
+	let search = `<center><strong><h3>Search summary</h3></strong></center><p><strong>Search term:</strong> ${twitCat.val()}</p>`
 	$('#input').html(search);
 
 	socket.emit('twitCat', {

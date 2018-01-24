@@ -34,23 +34,126 @@ html {
     }
 
 .formy {
-	padding: 100px;
+	padding: 10px;
 }
 
 .results {
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 12px;
 }
 
 #searchInfo {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	display: none;
+}
+
+.twitResult {
 	padding: 20px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #cacdd1;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);	
 	border-radius: 3px;
+}
+
+.twitReply {
+	padding: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color:  #ccdcf9;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	border-radius: 3px;
+}
+
+#twitCategories {
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.test-button {
+	color: white;
+	background-color: #4285F4;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.test-button:hover {
+	color: white;
+	background-color: #71a4f7;
+	
+}
+
+.input {
+	border-radius: 0;
+	resize: none;
+}
+
+.entity {
+	padding-top: 15px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding: 14px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+
+@media (min-width: 1024px) {
+
+.gap {
+	padding: 3px;
+}
+
+.top-strip {
+	  height: 5px;
+	  position: -webkit-sticky;
+  	  position: sticky;
+  	  top: 0;
+  	  background: red;
+      animation: colorchange 20s infinite; 
+      -webkit-animation: colorchange 20s infinite; 
+    }
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      75%  {background: orange;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange 
+    {
+      0%   {background: red;}
+      25%  {background: orange;}
+      50%  {background: blue;}
+      75%  {background: orange`;}
+      100% {background: red;}
+    }
+
+.formy {
+	padding: 100px;
+}
+
+.results {
+	padding-left: 300px;
+	padding-right: 300px;
+	font-size: 12px;
+}
+
+#searchInfo {
+	padding-left: 20px;
+	padding-right: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cacdd1;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);	
+	border-radius: 3px;
 	display: none;
+	background-color: #1dcaff;
 }
 
 .twitResult {
@@ -106,19 +209,5 @@ html {
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
 }
 
-.person {
-	background-color: #e0d4cc;
-}
-
-.organization {
-	background-color: #f7856f;
-}
-
-.location {
-	background-color: #d8f79b;
-}
-
-.other {
-	background-color: #9ebdef;
 }
 
